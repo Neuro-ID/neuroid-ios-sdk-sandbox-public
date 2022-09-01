@@ -154,12 +154,13 @@ platform :ios do
     lock_when_sleeps: false,
     add_to_search_list: true,
     )
-    UI.message "Current key: #{ ENV["APP_STORE_API_KEY_STAGING"]}"
+    
     api_key = app_store_connect_api_key(
     key_id: "T5G4WBWT7G",
     issuer_id: "66e3d57e-4317-457a-b337-336a0e28d4cc",
     #key_filepath: File.join(Dir.pwd, "Key"),
-    key_content: ENV["APP_STORE_API_KEY_STAGING"],
+    #key_content: ENV["APP_STORE_API_KEY_STAGING"],
+    key_content: "LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tCk1JR1RBZ0VBTUJNR0J5cUdTTTQ5QWdFR0NDcUdTTTQ5QXdFSEJIa3dkd0lCQVFRZ3ZrVGhESDNyVTFoOUpybEMKMDFZMXc0SEpBeTNuSU5WVnNkL2NoR1o4OHZDZ0NnWUlLb1pJemowREFRZWhSQU5DQUFTdDhlSGd3RjQzNFZXNgp5R2JDMHdIV1VtV0h2UXhVeWEwYXJ2bEE2cFd3SFBJUXhTVzZWN1pFRHZSSTEwNEh1eVVUcGUySk5jQkh3SHlOCm1vTURMNjhXCi0tLS0tRU5EIFBSSVZBVEUgS0VZLS0tLS0=",
     is_key_content_base64: true,
     duration: 1200, # optional (maximum 1200)
     in_house: false # optional but may be required if using match/sigh
