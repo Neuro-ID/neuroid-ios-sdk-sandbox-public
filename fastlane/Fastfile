@@ -250,6 +250,8 @@ platform :ios do
     
     deliver(
      api_key: api_key,
+     team_id: "R7TKKHQ7FG",
+     username: "jose.perez@neuro-id.com",
      skip_screenshots: true,
      skip_metadata: true,
      skip_app_version_update: true,
