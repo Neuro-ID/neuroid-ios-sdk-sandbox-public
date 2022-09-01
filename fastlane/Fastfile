@@ -154,7 +154,7 @@ platform :ios do
     lock_when_sleeps: false,
     add_to_search_list: true,
     )
-    UI.message "Current key: ENV["APP_STORE_API_KEY_STAGING"]"
+    UI.message "Current key: # { ENV["APP_STORE_API_KEY_STAGING"] }"
     api_key = app_store_connect_api_key(
     key_id: "T5G4WBWT7G",
     issuer_id: "66e3d57e-4317-457a-b337-336a0e28d4cc",
