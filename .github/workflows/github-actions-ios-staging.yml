@@ -34,6 +34,9 @@ jobs:
       - name: CocoaPod Install
         run: pod install
         
+      - name: Fastlane update
+        run: bundle update fastlane 
+        
       - name: Run iOS Unit testing for SDK
         run: bundle exec fastlane test
         
