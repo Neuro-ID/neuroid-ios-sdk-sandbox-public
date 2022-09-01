@@ -40,6 +40,6 @@ jobs:
       - name: Upload iOS app to Testflight
         run: bundle exec fastlane stage_beta
         env:
-         APP_STORE_API_KEY: ${{ secrets.APP_STORE_API_KEY }}
+         APP_STORE_API_KEY_STAGING: ${{ secrets.APP_STORE_API_KEY_STAGING }}
          KEYCHAIN_PASSWORD: ${{ secrets.DIST_CERT_BASE64 }}
          InternalCurrentVersion: ${{ env.VERSION }}
