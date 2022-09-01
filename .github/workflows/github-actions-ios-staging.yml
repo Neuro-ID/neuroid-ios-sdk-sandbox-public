@@ -1,4 +1,4 @@
-name: Github Actions for iOS NeuroID SDK Sandbox
+name: Github Actions for iOS NeuroID SDK staging Sandbox
 
 on:
 
@@ -7,39 +7,8 @@ on:
 env:
  VERSION: ${{ github.event.client_payload.version }}
  MESSAGE: ${{ github.event.client_payload.message }}
-jobs:
-  updating_files:
-    runs-on: macos-latest
-    steps:
-      - name: Branch Checkout
-        uses: actions/checkout@v3
-        with:
-         ref: ${{ github.head_ref }}
-         token: ${{ secrets.API_TOKEN_GITHUB }}
-        
-      - name: Set up ruby env
-        uses: ruby/setup-ruby@v1
-        with:
-         ruby-version: 2.7.2
-        
-      - name: Bundle Install
-        run: bundle install
-        
-      - uses: actions/cache@v2
-        with:
-         path: Pods
-         key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
-         restore-keys: |
-          ${{ runner.os }}-pods-
-      - name: CocoaPod Install
-        run: pod install
-        
-      - name: Update Current Version
-        run: bundle exec fastlane update_version
-        env:
-         InternalCurrentVersion: ${{ env.VERSION }}
-  
-  testflight:
+jobs:  
+  testflight-Staging:
     runs-on: macos-latest
     steps:
       - name: Branch Checkout
