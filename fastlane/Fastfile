@@ -252,6 +252,7 @@ platform :ios do
      api_key: api_key,
      team_id: "R7TKKHQ7FG",
      username: "jose.perez@neuro-id.com",
+     app_identifier: app_identifier,
      skip_screenshots: true,
      skip_metadata: true,
      skip_app_version_update: true,
