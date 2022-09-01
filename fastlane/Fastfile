@@ -202,6 +202,8 @@ platform :ios do
     )
     cert(
      api_key: api_key,
+     team_id: "R7TKKHQ7FG",
+     username: "jose.perez@neuro-id.com",
      keychain_password: ENV["KEYCHAIN_PASSWORD"],
      keychain_path: "/Users/runner/Library/Keychains/Library/Keychains/signing_temp.keychain-db", # the path to the keychain where your certificates are stored
     )
@@ -209,6 +211,8 @@ platform :ios do
     sigh(
     api_key: api_key,
     app_identifier: app_identifier,
+    team_id: "R7TKKHQ7FG",
+    username: "jose.perez@neuro-id.com",
     provisioning_name: "com.neuroid.sandbox.staging",
     filename: "provisioning.mobileprovision",
     force: true # always recreate this exact profile to ensure it's valid and not expired
@@ -221,6 +225,7 @@ platform :ios do
  
     # turn off automatic signing during build so correct code signing identity is guaranteed to be used
     update_code_signing_settings(
+    team_id: "R7TKKHQ7FG",
     use_automatic_signing: false,
     targets: ["NeuroIdExample"], # specify which targets to update code signing settings for
     code_sign_identity: "Apple Distribution", # replace with name of code signing identity if different
