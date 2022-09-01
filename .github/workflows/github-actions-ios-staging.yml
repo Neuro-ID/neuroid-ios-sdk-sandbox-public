@@ -1,0 +1,76 @@
+name: Github Actions for iOS NeuroID SDK Sandbox
+
+on:
+
+  repository_dispatch:
+        types: [on-demand-testflight-staging]
+env:
+ VERSION: ${{ github.event.client_payload.version }}
+ MESSAGE: ${{ github.event.client_payload.message }}
+jobs:
+  updating_files:
+    runs-on: macos-latest
+    steps:
+      - name: Branch Checkout
+        uses: actions/checkout@v3
+        with:
+         ref: ${{ github.head_ref }}
+         token: ${{ secrets.API_TOKEN_GITHUB }}
+        
+      - name: Set up ruby env
+        uses: ruby/setup-ruby@v1
+        with:
+         ruby-version: 2.7.2
+        
+      - name: Bundle Install
+        run: bundle install
+        
+      - uses: actions/cache@v2
+        with:
+         path: Pods
+         key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+         restore-keys: |
+          ${{ runner.os }}-pods-
+      - name: CocoaPod Install
+        run: pod install
+        
+      - name: Update Current Version
+        run: bundle exec fastlane update_version
+        env:
+         InternalCurrentVersion: ${{ env.VERSION }}
+  
+  testflight:
+    runs-on: macos-latest
+    steps:
+      - name: Branch Checkout
+        uses: actions/checkout@v3
+        with:
+         ref: ${{ github.head_ref }}
+        
+      - name: Set up ruby env
+        uses: ruby/setup-ruby@v1
+        with:
+         ruby-version: 2.7.2
+        
+      - name: Bundle Install
+        run: bundle install
+        
+      - uses: actions/cache@v2
+        with:
+         path: Pods
+         key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+         restore-keys: |
+          ${{ runner.os }}-pods-
+      
+      - name: CocoaPod Install
+        run: pod install
+        
+      - name: Run iOS Unit testing for SDK
+        run: bundle exec fastlane test
+        
+      - name: Upload iOS app to Testflight
+        run: bundle exec fastlane stage_beta
+        env:
+         APP_STORE_API_KEY: ${{ secrets.APP_STORE_API_KEY }}
+         KEYCHAIN_PASSWORD: ${{ secrets.DIST_CERT_BASE64 }}
+         InternalCurrentVersion: ${{ env.VERSION }}
