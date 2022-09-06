@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Neuro-ID/Neuro_ID.framework
