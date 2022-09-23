@@ -13,7 +13,7 @@ final class NILoanOptionsVC: UIViewController {
         ageAtWorklbl.id = "ageAtWorklbl"
         economicDependentslbl.id = "economicDependentslbl"
         super.viewDidLoad()
-        
+        setupKeyboardHiding()
         setupNavBarImage()
     }
     /// Setup navigation bar image with logo

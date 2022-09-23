@@ -34,6 +34,7 @@ final class NIOnbardingVC: UIViewController {
         employerPhoneNumberlbl.id = "employerPhoneNumberlbl"
         
         super.viewDidLoad()
+        setupKeyboardHiding()
         setupNavBarImage()
         setupTextFieldDelegate()
         setupDateBirthPicker()
