@@ -18,8 +18,7 @@ final class NILoanOptionsVC: UIViewController {
         setupNavBarImage()
     }
     @IBAction func onClick(_ sender: Any) {
-        var event = NIDEvent(type: NIDEventName.stopSession, view: UIView.init())
-        NeuroID.saveEventToLocalDataStore(event)
+        NeuroID.closeSession()
         NeuroID.groupAndPOST()
         NeuroID.clearSession()
         

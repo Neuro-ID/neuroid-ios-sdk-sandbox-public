@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NeuroID.setEnvironmentProduction(true)
         NeuroID.setSiteId(siteId: "form_dream102")
         NeuroID.start();
+        NeuroID.getClientID()
         // resume() is called in case stop() was called in a previous build.
         // the local stroage will still have stop indicator in it unless resume is called.
         
