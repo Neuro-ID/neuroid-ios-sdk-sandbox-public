@@ -319,7 +319,7 @@
 				07EA59A928358EF400539C74 /* Sources */,
 				07EA59AA28358EF400539C74 /* Frameworks */,
 				07EA59AB28358EF400539C74 /* Resources */,
-				11E8127A122773BE30825EA0 /* [CP] Embed Pods Frameworks */,
+				C366FF18E27E070E92BCC103 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,7 +339,7 @@
 				26BCF361268DB5FC0002C289 /* Sources */,
 				26BCF362268DB5FC0002C289 /* Frameworks */,
 				26BCF363268DB5FC0002C289 /* Resources */,
-				203BCAEF9C42B5F81F1BA6E9 /* [CP] Embed Pods Frameworks */,
+				A00566F30B1F5BAC0FD87A1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -414,40 +414,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		11E8127A122773BE30825EA0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		203BCAEF9C42B5F81F1BA6E9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6CCF243D086A613233D5E477 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -468,6 +434,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A00566F30B1F5BAC0FD87A1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExample/Pods-NeuroIdExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C366FF18E27E070E92BCC103 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F0F5BB042186D84BC13FA683 /* [CP] Check Pods Manifest.lock */ = {

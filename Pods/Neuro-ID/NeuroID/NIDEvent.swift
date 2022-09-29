@@ -2,6 +2,7 @@ import UIKit
 
 internal enum NIDSessionEventName: String {
     case createSession = "CREATE_SESSION"
+    case stopSession = "STOP_SESSION"
     case stateChange = "STATE_CHANGE"
     case setUserId = "SET_USER_ID"
     case setVariable = "SET_VARIABLE"
@@ -18,6 +19,7 @@ internal enum NIDSessionEventName: String {
 
 public enum NIDEventName: String {
     case createSession = "CREATE_SESSION"
+    case stopSession = "STOP_SESSION"
     case heartbeat = "HEARTBEAT"
     case error = "ERROR"
     case log = "LOG"
@@ -78,19 +80,16 @@ public enum NIDEventName: String {
     }
 }
 
+public struct Attrs: Codable, Equatable {
+    var n:String?
+    var v:String?
+}
 public struct Attr: Codable, Equatable {
     var guid:String?
     var screenHierarchy:String?
+    var n:String?
     var v:String?
     var hash:String?
-    init(guid:String?, screenHierarchy:String?) {
-        self.guid = guid
-        self.screenHierarchy = screenHierarchy
-    }
-    init(v:String?, hash:String?) {
-        self.v = v
-        self.hash = hash
-    }
 }
 
 public struct NIDTouches: Codable, Equatable {
@@ -111,9 +110,9 @@ public struct NeuroHTTPRequest: Codable {
     var tabId: String
     var pageId:String
     var url:String
-    var jsVersion:String
+    var jsVersion:String = "5.0.0"
     
-    public init(clientId: String, environment: String, sdkVersion: String, pageTag: String, responseId:String, siteId:String, userId:String, jsonEvents:[NIDEvent], tabId: String, pageId:String, url:String, jsVersion:String){
+    public init(clientId: String, environment: String, sdkVersion: String, pageTag: String, responseId:String, siteId:String, userId:String, jsonEvents:[NIDEvent], tabId: String, pageId:String, url:String){
         self.clientId = clientId
         self.environment = environment
         self.sdkVersion = sdkVersion
@@ -125,13 +124,12 @@ public struct NeuroHTTPRequest: Codable {
         self.tabId = tabId
         self.pageId = pageId
         self.url = url
-        self.jsVersion = jsVersion
     }
 }
 
 public enum TargetValue: Codable,Equatable {
     
-    case int(Int), string(String), bool(Bool), double(Double), attr(Attr)
+    case int(Int), string(String), bool(Bool), double(Double), attrs([Attrs]), attr([Attr])
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
@@ -141,6 +139,7 @@ public enum TargetValue: Codable,Equatable {
             case .string(let value): try container.encode(value)
             case .bool(let value): try container.encode(value)
             case .double(let value): try container.encode(value)
+            case .attrs(let value): try container.encode(value)
             case .attr(let value): try container.encode(value)
 
         }
@@ -157,6 +156,8 @@ public enum TargetValue: Codable,Equatable {
         case .double(let double):
             return String(double)
         case .attr(let array):
+            return String(describing: array)
+        case .attrs(let array):
             return String(describing: array)
         }
     }
@@ -182,8 +183,12 @@ public enum TargetValue: Codable,Equatable {
             return
         }
         
+        if let attrs = try? decoder.singleValueContainer().decode(Attrs.self) {
+            self = .attrs([attrs])
+            return
+        }
         if let attr = try? decoder.singleValueContainer().decode(Attr.self) {
-            self = .attr(attr)
+            self = .attr([attr])
             return
         }
         
@@ -206,6 +211,7 @@ public struct NIDEvent: Codable {
     var tgs: String?
     var key: String?
     var v: String?
+    var hv: String?
     var en: String?
     var etn: String? // Tag name (input)
     var et: String? // Element Type (text)
@@ -233,9 +239,12 @@ public struct NIDEvent: Codable {
     var uid: String?
     var sm: Double?
     var pd: Double?
+    var attrs:[Attrs]?
     var gyro: NIDSensorData?
     var accel: NIDSensorData?
     var touches: [NIDTouches]?
+    var sh: CGFloat?
+    var sw: CGFloat?
 
         /**
             Use to initiate a new session
@@ -332,6 +341,10 @@ public struct NIDEvent: Codable {
      
  */
 
+    init(type: NIDEventName) {
+        self.type = type.rawValue
+    }
+    
     init(eventName: NIDEventName, tgs: String, en: String, etn: String, et: String, ec: String, v: String, url: String) {
         self.type = eventName.rawValue
         self.tgs = tgs;
@@ -363,6 +376,7 @@ public struct NIDEvent: Codable {
         var newTg = tg ?? [String: TargetValue]()
         newTg["tgs"] = TargetValue.string(view != nil ? view!.id : "")
         self.tg = newTg
+        self.tgs = TargetValue.string(view != nil ? view!.id : "").toString()
         self.url = primaryViewController?.className
         self.x = view?.frame.origin.x
         self.y = view?.frame.origin.y
@@ -378,8 +392,8 @@ public struct NIDEvent: Codable {
     /**
      * Form submit, Sucess Submit, Failure Submit
      */
-    init(type: NIDEventName){
-        self.type = type.rawValue
+    init(typeName: NIDEventName){
+        self.type = typeName.rawValue
     }
     
     init(type: NIDEventName, tg: [String: TargetValue]?, v: String){
@@ -443,6 +457,7 @@ public struct NIDEvent: Codable {
 
     public init(type: NIDEventName, tg: [String: TargetValue]?, view: UIView?) {
         self.type = type.rawValue
+        self.tgs = TargetValue.string(view != nil ? view!.id : "").toString()
         var newTg = tg ?? [String: TargetValue]()
         newTg["tgs"] = TargetValue.string(view != nil ? view!.id : "")
         self.ts = ParamsCreator.getTimeStamp()

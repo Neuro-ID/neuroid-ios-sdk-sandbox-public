@@ -7,184 +7,186 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01C9B9FC852C1C2A1FD71211DC2797FE /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F675C84DB4573F8973C265A893AD165C /* OperationQueue+Alamofire.swift */; };
-		02F140505263CE2C317B1DAF93F08B14 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446B430F6F9582F321C88AE1A42BA6B /* URLRequest+Alamofire.swift */; };
-		0A8D12B5A80482D3F3A841494E7A9EE8 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068D5FE70D4E8E5D5A02461E76BECC3 /* RequestInterceptor.swift */; };
-		10C799A73B6966AF4A70904BA0BB2F21 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACBFCB54534C3440F7AAA556FF1041 /* Response.swift */; };
-		14369DCF36EE03E95BAD780B504DC735 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD40F3F0AC70C317B7B416D47FEAFBB /* RequestTaskMap.swift */; };
-		1B9C99E04BFFA5AA0A9FF73D7627F669 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5337D58455CD257BD26733E39545D0A8 /* NetworkReachabilityManager.swift */; };
-		1E24462788C37797BA545E00D1FDA175 /* NeuroID.h in Headers */ = {isa = PBXBuildFile; fileRef = A720B82F6FB3080B3BB1F809631BBE6B /* NeuroID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01C9B9FC852C1C2A1FD71211DC2797FE /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B060DB49311B29AB77CB5C5756DAAAAB /* OperationQueue+Alamofire.swift */; };
+		02F140505263CE2C317B1DAF93F08B14 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F245550FD4798FD6BA439B7C2D009B3A /* URLRequest+Alamofire.swift */; };
+		0A8D12B5A80482D3F3A841494E7A9EE8 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4BC4D1A3DC805D91F7889319990B21 /* RequestInterceptor.swift */; };
+		0AE6529914E42AC2422A6152585B3EEC /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1913681540A5555059BDC3767E698978 /* DataStore.swift */; };
+		10C799A73B6966AF4A70904BA0BB2F21 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA932628D115F6B72D18F59D96CEB2 /* Response.swift */; };
+		14369DCF36EE03E95BAD780B504DC735 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44144AEC9299578BDE863B6A3905448A /* RequestTaskMap.swift */; };
+		1B9C99E04BFFA5AA0A9FF73D7627F669 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4159D75C94595E3AB97E910EC62A9DF4 /* NetworkReachabilityManager.swift */; };
 		245293FD5B64D35B662D9E3229CEDADF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
-		2B0A99E2D1DBD2C93AC3CCD970C05658 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017A633532780B1ACE25F39ACEF394E1 /* Session.swift */; };
-		2C0E81C000F539992195309BD5CC5BB6 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF441C562B83D16F6F35A6F75839D7E /* Combine.swift */; };
-		3D54619D2E8C55A52F5A7CDC813CDAE7 /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F3F318761E36B500CCB468311F84C8 /* AuthenticationInterceptor.swift */; };
-		3E1A52A2E0F00F085B9EF77AB2ED8CB8 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277BA0DA2D4C326683A78E65298B5E60 /* Protected.swift */; };
-		40D3ECD4B05E4B3DAF460E694E5366B3 /* NIDEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1354A88D4EC956B32F1F17D02E8C02 /* NIDEvent.swift */; };
+		2B0A99E2D1DBD2C93AC3CCD970C05658 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E4ACCEAF9782038EACF850203A7EA4 /* Session.swift */; };
+		2C0E81C000F539992195309BD5CC5BB6 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0844195753057EB53C876F36E73F2544 /* Combine.swift */; };
+		3D54619D2E8C55A52F5A7CDC813CDAE7 /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE5B7F33968BB9DB6870E529997FE05 /* AuthenticationInterceptor.swift */; };
+		3E1A52A2E0F00F085B9EF77AB2ED8CB8 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC31F240010F6411ABB71EDD1C4FEAB2 /* Protected.swift */; };
 		42F22C02C89CE505E18C80E1C456D22B /* Pods-NeuroIdExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38E8B792BF76D9C0C0D7B80C96E34ECD /* Pods-NeuroIdExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43A90C208D5655D0115A4106272FBE3C /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3515234D595F4F0CBC494D193C959E /* Alamofire-dummy.m */; };
-		440240BCCC9DA96C453558EAB37952AD /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6BAAC95B696C7A918683D3A25DC56F /* MultipartUpload.swift */; };
-		51D452C8D548385346126AC1E2ACE163 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134FA71E7A12861DBC741B43760654B7 /* HTTPMethod.swift */; };
-		5442EB4500A458CD9AB0CE7671C4C44B /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3F09A144C832566C99AD3C7DC3869 /* ServerTrustEvaluation.swift */; };
-		54C21EFDA05A82E410232BF800A2BBFB /* SDKPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D7EE389407BC51939CD031D8017B1 /* SDKPreferences.swift */; };
+		43A90C208D5655D0115A4106272FBE3C /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B39F2AD24D426CAACF474CE96200BA /* Alamofire-dummy.m */; };
+		440240BCCC9DA96C453558EAB37952AD /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05339FB0925D04B0A468F4628D3F09D6 /* MultipartUpload.swift */; };
+		4CF6E90758835B76C1764B8D3471E5B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		51D452C8D548385346126AC1E2ACE163 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199822D0CFB4A8F7E34FEDF1E7CE8CF1 /* HTTPMethod.swift */; };
+		5442EB4500A458CD9AB0CE7671C4C44B /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D9B3576131AA51B1DF1D3C58061791 /* ServerTrustEvaluation.swift */; };
 		5D8F87332820CF3F37261A62D77152CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
-		5EB46575FFCA7939E78BA73E77A80297 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3942AE49220F795233E768B5F831FA6D /* DataStore.swift */; };
-		5EB7C8FB43AFAC6749A323155FAF5B64 /* Neuro-ID-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1D9F0262B74F911804EAA82F70292C /* Neuro-ID-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F1AF47AAD0CAA8F1C4465D6A4942A9E /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3C1EC3AD32F7B15D916E6821F22749 /* ParameterEncoding.swift */; };
-		63B99768A4172B8BC60A12787D93399D /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA3C7B44C2C71F172D3399FF8B85514 /* MultipartFormData.swift */; };
-		68400B2FEAC518CE3A6504BD67ED884F /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF6F9EDDCC883142AD72967C82FA9CE /* DispatchQueue+Alamofire.swift */; };
-		6D9B634FB345FFDFA9A193EFA9ED2E19 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E744E6772D3F2CA2C0F1593E4E7941 /* Result+Alamofire.swift */; };
-		6E74DFA225C5DE5975ACA9FA39F5317D /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA9411B04E2D239FB5790D3756E737 /* ParameterEncoder.swift */; };
-		7553550F5EC9A928A2C9A60DAA054334 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD5338B54B17859B30382F847959465 /* RetryPolicy.swift */; };
-		762C1D14F5DF4C4ADA66B1DFD76B3A62 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47A08AD2ED7F6990778F609AEBD9806 /* Request.swift */; };
-		777AC64BB44611DD6FFF2AAAC9995173 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B6F66398BB714C45473D5D914BE8F2 /* SessionDelegate.swift */; };
-		7D815CC1F46332B4DEFAB6178F4527BC /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A6DF442291A7CBBF0D77E447E83EF7 /* Concurrency.swift */; };
-		7F9C85EB2C4533432C5F1C6E754BC819 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1CC060F086F99EE6BD56055DC34016 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8207214A91C427E144DC0E09E280952C /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B33A573F17918D9D04D7F325A45A1A7 /* Notifications.swift */; };
-		859392EBFA3271D43FE878AE8214443A /* Neuro-ID-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF13661BB13A99653BF34A1CD779F36 /* Neuro-ID-dummy.m */; };
-		8C8BE835EA0B2FCB3A2581DAF6C93BA2 /* NeuroIDTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B41B142AA930DB6061FF59C6674E72 /* NeuroIDTracker.swift */; };
-		95499DFBAD6520D8F708A0F844CAD7BD /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA0DD1D80F4F163AA3B8DBB3C5C29AD /* EventMonitor.swift */; };
-		958A4EA6281AE61310A22ED8201AE91F /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64384EC19AB02E800FA5BBAE3E358516 /* ResponseSerialization.swift */; };
-		973E5CC96C16D68FCCDC907E6BDEBA5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
+		5F1AF47AAD0CAA8F1C4465D6A4942A9E /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7D3C97EFCF3551EC1A94BC7CA245E /* ParameterEncoding.swift */; };
+		63B99768A4172B8BC60A12787D93399D /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E59A4551CA750A34D4AA446F230FB15 /* MultipartFormData.swift */; };
+		68400B2FEAC518CE3A6504BD67ED884F /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FA625F75FDE475D962F577DD3E50BB /* DispatchQueue+Alamofire.swift */; };
+		6D9B634FB345FFDFA9A193EFA9ED2E19 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DE4FC021FBBCD2138FFDFE01A8FC7C /* Result+Alamofire.swift */; };
+		6E74DFA225C5DE5975ACA9FA39F5317D /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6127097309D6DC6E2AC6BDBD3EE75A1 /* ParameterEncoder.swift */; };
+		7553550F5EC9A928A2C9A60DAA054334 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEF0FB0ABCADCFD0ECD11F2B38788B6 /* RetryPolicy.swift */; };
+		762C1D14F5DF4C4ADA66B1DFD76B3A62 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD01B850DFD4B6465F3C2AC11F6236 /* Request.swift */; };
+		777AC64BB44611DD6FFF2AAAC9995173 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90721653ED712B405B1C4FF118F31C85 /* SessionDelegate.swift */; };
+		7D815CC1F46332B4DEFAB6178F4527BC /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4241BFAAFB2B853C6C222F2CD6D0F5 /* Concurrency.swift */; };
+		7F9C85EB2C4533432C5F1C6E754BC819 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF52658E5DA9D15ACFD3C2AF49C3ADE /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8207214A91C427E144DC0E09E280952C /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E52BA4A689D35C44D28735A92D796B /* Notifications.swift */; };
+		95499DFBAD6520D8F708A0F844CAD7BD /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F71FE7D2D49CD55FA2F6D65613C96B /* EventMonitor.swift */; };
+		958A4EA6281AE61310A22ED8201AE91F /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED97BEEFA671A4D3288E7E89111AA1C /* ResponseSerialization.swift */; };
 		9B9A1BD56C3455F0E9FCD19743833FE6 /* Pods-NeuroIdExampleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EF8BF7AF0F0EFF84446B7BB0B6DE322 /* Pods-NeuroIdExampleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C4CF57457F0CEEFB4D9327700B942C1 /* NeuroIDSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44F29DF7C3377585975D9C2A02118A9 /* NeuroIDSensors.swift */; };
-		A79851601051E07BB22DEC51027FC76D /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A763D9E62BDB260742E460515A439E5 /* AlamofireExtended.swift */; };
-		ABEC4C22C13CE47AA1A82BCDBB8A5D8E /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FF26B6AA9C4CB9B9CBAA1028C16B79 /* AFError.swift */; };
-		B60CBD207BD6312CB03BCA7003E30DF0 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59269F21A1CF9DC1596B963D050E543C /* CachedResponseHandler.swift */; };
-		CCE8E461BA01766B8466A48CB5E9B84E /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10F7268F95EB5B039C051B70C65EC14 /* Alamofire.swift */; };
-		CEF15E24F49FF2F3B6460385669DCC47 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9121E34B2862814056C45EE81C0E94A /* URLEncodedFormEncoder.swift */; };
-		CFD5BFB42A598C029ACC9FC179C15ABC /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C1FFDD0C239044CE1B76DAE88450A /* URLConvertible+URLRequestConvertible.swift */; };
+		9DE0D83E150D0619F25A2CF6F47BBB88 /* NeuroID.h in Headers */ = {isa = PBXBuildFile; fileRef = B30D6E39F3F7C3F2E3F47750ACB6BFC8 /* NeuroID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A79851601051E07BB22DEC51027FC76D /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6943D4ECCE6784826C60761AF490EFB /* AlamofireExtended.swift */; };
+		A9D30366282B6B06E824193FEC3AC019 /* Neuro-ID-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6D6D00D18FA783D751DC6319F269E30 /* Neuro-ID-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAACECA84D09FF6B9AFEB366205C1319 /* NIDEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887B9C6D992A4F18BA4C9EB3E6CF6C9F /* NIDEvent.swift */; };
+		ABEC4C22C13CE47AA1A82BCDBB8A5D8E /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EE5F7B23C9A65D96CE13D9F92C7330 /* AFError.swift */; };
+		B25E0BDAB176DF2294EE93CAFDF5B878 /* NeuroIDTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662B4B7BB7F9EB2B623E02022E8430AB /* NeuroIDTracker.swift */; };
+		B60CBD207BD6312CB03BCA7003E30DF0 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96125EC73CFB27A8BBEA18F81B3C653 /* CachedResponseHandler.swift */; };
+		B886FFC90EE26A6357810845C84BB0A3 /* Neuro-ID-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 425778699A11808C6098ECA02B55D406 /* Neuro-ID-dummy.m */; };
+		CCE8E461BA01766B8466A48CB5E9B84E /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CC8EF8A71070ACB6B192BBB4DF2F6E /* Alamofire.swift */; };
+		CEF15E24F49FF2F3B6460385669DCC47 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079D3332970EABF487671DDD39B12274 /* URLEncodedFormEncoder.swift */; };
+		CFD5BFB42A598C029ACC9FC179C15ABC /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EECE37E8D07BDBB5D16F39533D35C8 /* URLConvertible+URLRequestConvertible.swift */; };
 		D0FC88F986809AD08FD66C192A96A872 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */; };
 		D17C7EB6A61E631F70B8B1E7D0CA8AFD /* Pods-NeuroIdExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF59FCF49BFD954E6ECD37F711B2905B /* Pods-NeuroIdExample-dummy.m */; };
-		D292424687ABE21BC7236376EEE44CD7 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04C174E5C1EFDEDCCEA39AEBA2DC27E /* HTTPHeaders.swift */; };
-		DB302464C33E223021FACF25D13BA11E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC3E0AB82EFF6B96568E58E9614362D /* Validation.swift */; };
+		D292424687ABE21BC7236376EEE44CD7 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B1091618C642A57ED56FACBC2412E /* HTTPHeaders.swift */; };
+		DB302464C33E223021FACF25D13BA11E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D085228861EF8EEA73BDC3508AB8B04B /* Validation.swift */; };
 		E37F5F4E5C40C92FB302C972F9F0ECA3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */; };
-		E3814FA9908189AAFA96B15515D16E70 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34DB93C029FED22EF462C85CE6B5CA4 /* RedirectHandler.swift */; };
-		E86E898C37BF41F47B42DC156B627718 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404D0EFDF2F46BEDD9683E5B191C1F3 /* StringEncoding+Alamofire.swift */; };
+		E3814FA9908189AAFA96B15515D16E70 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F21399DA589F017FE7380EBFDB7B02 /* RedirectHandler.swift */; };
+		E86E898C37BF41F47B42DC156B627718 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FDF9E0F3A5F86832C98646D7AEB250 /* StringEncoding+Alamofire.swift */; };
 		EBD58ACA709756DB76B68A7CDE2E5493 /* Pods-NeuroIdExampleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C944193DD06A32168A7141676874CEF9 /* Pods-NeuroIdExampleUITests-dummy.m */; };
-		F2354EA784288DB076857727F8CA602D /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BEF581A1F52CA6565A7D7132AF7CB0 /* URLSessionConfiguration+Alamofire.swift */; };
+		ECE492F53B0465B6F69921522EA51E95 /* NeuroIDSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0949CA8D1EAF6B8020AC67C9FA6E4C2B /* NeuroIDSensors.swift */; };
+		F2354EA784288DB076857727F8CA602D /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5E36E12443988208777DE7218D05A7 /* URLSessionConfiguration+Alamofire.swift */; };
+		F3F7747EE08B03F18AB2678C22735835 /* SDKPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0A5D7AA230F4D3EB78E91A34528B85 /* SDKPreferences.swift */; };
+		F984517180E7C4B68B67D414960F88AE /* NIDMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5712338C144E9FCD5BC594493835D746 /* NIDMetadata.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7685FC13189D778743EACECEEC65FD56 /* PBXContainerItemProxy */ = {
+		46A9D7DAFF2DD2A8AC499F67447F0A58 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
 		};
-		77B77539B45A8C07DACB7037404A7041 /* PBXContainerItemProxy */ = {
+		5C2673C27ABEA2AD1DCBAB89769F1A78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		B7FCD6C6B4321C934AA8406D82AE991F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		C834790939C915F87627A9FAA9EADA53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3390B57A35E587A0E87DD61AE43D5076;
 			remoteInfo = "Neuro-ID";
 		};
-		DDBE1A8D0EE52DB996C0E56A93C042BA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
-			remoteInfo = Alamofire;
-		};
-		EAF2A2B87A5A3D2B32F1235667F92A5E /* PBXContainerItemProxy */ = {
+		E227DD51BC8738D8BDA4B9B183AD8740 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3390B57A35E587A0E87DD61AE43D5076;
 			remoteInfo = "Neuro-ID";
-		};
-		FCF80ED2745A328F267B49C057EC6611 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
-			remoteInfo = Alamofire;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		017A633532780B1ACE25F39ACEF394E1 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
-		05A6DF442291A7CBBF0D77E447E83EF7 /* Concurrency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Concurrency.swift; path = Source/Concurrency.swift; sourceTree = "<group>"; };
-		134FA71E7A12861DBC741B43760654B7 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		05339FB0925D04B0A468F4628D3F09D6 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		079D3332970EABF487671DDD39B12274 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		0844195753057EB53C876F36E73F2544 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
+		0949CA8D1EAF6B8020AC67C9FA6E4C2B /* NeuroIDSensors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeuroIDSensors.swift; path = NeuroID/NeuroIDSensors.swift; sourceTree = "<group>"; };
+		0A0A5D7AA230F4D3EB78E91A34528B85 /* SDKPreferences.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SDKPreferences.swift; path = NeuroID/SDKPreferences.swift; sourceTree = "<group>"; };
+		0B4BC4D1A3DC805D91F7889319990B21 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
 		144F6A2686E2A5D598F309607A8B1C46 /* Pods-NeuroIdExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeuroIdExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		17DE4FC021FBBCD2138FFDFE01A8FC7C /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		1913681540A5555059BDC3767E698978 /* DataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataStore.swift; path = NeuroID/DataStore.swift; sourceTree = "<group>"; };
 		191FFF0EF4F6AAC434B9949DBC9A849D /* Pods-NeuroIdExampleUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeuroIdExampleUITests-Info.plist"; sourceTree = "<group>"; };
-		1DAA9411B04E2D239FB5790D3756E737 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
-		20A2F4BFDF3AEC1BA01EA24DF17778AE /* Neuro-ID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Neuro-ID.debug.xcconfig"; sourceTree = "<group>"; };
+		199822D0CFB4A8F7E34FEDF1E7CE8CF1 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		1D5B1091618C642A57ED56FACBC2412E /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		1E59A4551CA750A34D4AA446F230FB15 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		1ED97BEEFA671A4D3288E7E89111AA1C /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		22CFF38DBCD935ADC5A04FF1D4C2348A /* Pods-NeuroIdExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeuroIdExample-Info.plist"; sourceTree = "<group>"; };
-		25C9967FADF185BB4D0CCA513CAEE642 /* Neuro-ID-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Neuro-ID-prefix.pch"; sourceTree = "<group>"; };
-		277BA0DA2D4C326683A78E65298B5E60 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
-		29B41B142AA930DB6061FF59C6674E72 /* NeuroIDTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeuroIDTracker.swift; path = NeuroID/NeuroIDTracker.swift; sourceTree = "<group>"; };
+		23EECE37E8D07BDBB5D16F39533D35C8 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		257A76631C7205DE37E54A319797E3A1 /* Neuro-ID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Neuro-ID.release.xcconfig"; sourceTree = "<group>"; };
+		27B39F2AD24D426CAACF474CE96200BA /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		2A83FDC6F1522EF923EDA9DFAB860541 /* Pods-NeuroIdExampleUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NeuroIdExampleUITests"; path = Pods_NeuroIdExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D12282AAAE2AABA328B7A820DD5D03D /* Pods-NeuroIdExampleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NeuroIdExampleUITests.modulemap"; sourceTree = "<group>"; };
+		31EA932628D115F6B72D18F59D96CEB2 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		37E4ACCEAF9782038EACF850203A7EA4 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
 		38E8B792BF76D9C0C0D7B80C96E34ECD /* Pods-NeuroIdExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NeuroIdExample-umbrella.h"; sourceTree = "<group>"; };
-		3942AE49220F795233E768B5F831FA6D /* DataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataStore.swift; path = NeuroID/DataStore.swift; sourceTree = "<group>"; };
-		3DD40F3F0AC70C317B7B416D47FEAFBB /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
-		3E1354A88D4EC956B32F1F17D02E8C02 /* NIDEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NIDEvent.swift; path = NeuroID/NIDEvent.swift; sourceTree = "<group>"; };
+		4159D75C94595E3AB97E910EC62A9DF4 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		425778699A11808C6098ECA02B55D406 /* Neuro-ID-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Neuro-ID-dummy.m"; sourceTree = "<group>"; };
+		44144AEC9299578BDE863B6A3905448A /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
 		4551F7640C62E94B03E715AA5BEC91CC /* Pods-NeuroIdExampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeuroIdExampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4BF52658E5DA9D15ACFD3C2AF49C3ADE /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		4ED42B2D5924E634B95B0E2E26CB8F2D /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
 		50779F37F6AEBF777DC01E3F0795D9ED /* Pods-NeuroIdExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeuroIdExample.debug.xcconfig"; sourceTree = "<group>"; };
-		5337D58455CD257BD26733E39545D0A8 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		5446B430F6F9582F321C88AE1A42BA6B /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
-		57FF26B6AA9C4CB9B9CBAA1028C16B79 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		52F71FE7D2D49CD55FA2F6D65613C96B /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		55FDF9E0F3A5F86832C98646D7AEB250 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		5712338C144E9FCD5BC594493835D746 /* NIDMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NIDMetadata.swift; path = NeuroID/NIDMetadata.swift; sourceTree = "<group>"; };
 		584BDB438B50E38F3681E33859BB6F58 /* Pods-NeuroIdExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NeuroIdExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		59269F21A1CF9DC1596B963D050E543C /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
-		5BF13661BB13A99653BF34A1CD779F36 /* Neuro-ID-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Neuro-ID-dummy.m"; sourceTree = "<group>"; };
-		5CD5338B54B17859B30382F847959465 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
-		5D3515234D595F4F0CBC494D193C959E /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F3C1EC3AD32F7B15D916E6821F22749 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		5DAD01B850DFD4B6465F3C2AC11F6236 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		5F5BDBE40C271BE4D9984F2ABFA0FC96 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		622F04E7E2DC3BBCC6B0F7AB9238A008 /* Pods-NeuroIdExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NeuroIdExample-frameworks.sh"; sourceTree = "<group>"; };
 		6289A57E091F0011D56DC5A8C78F0E16 /* Pods-NeuroIdExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeuroIdExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
-		64384EC19AB02E800FA5BBAE3E358516 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		6B33A573F17918D9D04D7F325A45A1A7 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		6CA3F09A144C832566C99AD3C7DC3869 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
-		6E0F56401CB76DDEBDA6C8EA168F2FBE /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
-		6EF441C562B83D16F6F35A6F75839D7E /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
+		662B4B7BB7F9EB2B623E02022E8430AB /* NeuroIDTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeuroIDTracker.swift; path = NeuroID/NeuroIDTracker.swift; sourceTree = "<group>"; };
+		68EE5F7B23C9A65D96CE13D9F92C7330 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		6EF8BF7AF0F0EFF84446B7BB0B6DE322 /* Pods-NeuroIdExampleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NeuroIdExampleUITests-umbrella.h"; sourceTree = "<group>"; };
-		7068D5FE70D4E8E5D5A02461E76BECC3 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
-		7404D0EFDF2F46BEDD9683E5B191C1F3 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
 		77CEFEF869609ABEC6AA98C8FA06F455 /* Pods-NeuroIdExample.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeuroIdExample.staging.xcconfig"; sourceTree = "<group>"; };
-		7A763D9E62BDB260742E460515A439E5 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
-		7CA3C7B44C2C71F172D3399FF8B85514 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		808943A6D404506BFA9087CCEBD3781A /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		84ACBFCB54534C3440F7AAA556FF1041 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		83D7D3C97EFCF3551EC1A94BC7CA245E /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		85DD82C59BA4A2033400BCDC7B32C9F5 /* Pods-NeuroIdExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeuroIdExample.release.xcconfig"; sourceTree = "<group>"; };
-		86151BF707C465D66C522D902B715684 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
-		8D1D9F0262B74F911804EAA82F70292C /* Neuro-ID-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Neuro-ID-umbrella.h"; sourceTree = "<group>"; };
+		887B9C6D992A4F18BA4C9EB3E6CF6C9F /* NIDEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NIDEvent.swift; path = NeuroID/NIDEvent.swift; sourceTree = "<group>"; };
 		8D3D57353834825F7B52B816066B7789 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		8E1CC060F086F99EE6BD56055DC34016 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		8D7524EFD6518C114E42C9E75D034F90 /* Neuro-ID-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Neuro-ID-Info.plist"; sourceTree = "<group>"; };
+		90721653ED712B405B1C4FF118F31C85 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		914B79B6F63692550630C0382C8C1111 /* Pods-NeuroIdExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-NeuroIdExample"; path = Pods_NeuroIdExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		94B6F66398BB714C45473D5D914BE8F2 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		9A4241BFAAFB2B853C6C222F2CD6D0F5 /* Concurrency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Concurrency.swift; path = Source/Concurrency.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A04C174E5C1EFDEDCCEA39AEBA2DC27E /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
 		A120C33FE2DDF5B02A4F811C12A01944 /* Pods-NeuroIdExampleUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeuroIdExampleUITests.staging.xcconfig"; sourceTree = "<group>"; };
-		A281BFA82F50B4EE31A192ACD00A4D89 /* Neuro-ID-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Neuro-ID-Info.plist"; sourceTree = "<group>"; };
-		A44F29DF7C3377585975D9C2A02118A9 /* NeuroIDSensors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeuroIDSensors.swift; path = NeuroID/NeuroIDSensors.swift; sourceTree = "<group>"; };
-		A47A08AD2ED7F6990778F609AEBD9806 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		A720B82F6FB3080B3BB1F809631BBE6B /* NeuroID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NeuroID.h; path = NeuroID/NeuroID.h; sourceTree = "<group>"; };
+		A21E70ED03F06000BE13C1D8EE1B167C /* Neuro-ID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Neuro-ID.debug.xcconfig"; sourceTree = "<group>"; };
+		A2CC8EF8A71070ACB6B192BBB4DF2F6E /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		A2F21399DA589F017FE7380EBFDB7B02 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
 		ADB127527A71F54DAFB4669A5185F158 /* Pods-NeuroIdExampleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NeuroIdExampleUITests-frameworks.sh"; sourceTree = "<group>"; };
 		AF59FCF49BFD954E6ECD37F711B2905B /* Pods-NeuroIdExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NeuroIdExample-dummy.m"; sourceTree = "<group>"; };
-		B10F7268F95EB5B039C051B70C65EC14 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		B2F3F318761E36B500CCB468311F84C8 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		B060DB49311B29AB77CB5C5756DAAAAB /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		B08BBB99ECF6F98F0545B00816F8DE6A /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		B0FA625F75FDE475D962F577DD3E50BB /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		B30D6E39F3F7C3F2E3F47750ACB6BFC8 /* NeuroID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NeuroID.h; path = NeuroID/NeuroID.h; sourceTree = "<group>"; };
+		B6127097309D6DC6E2AC6BDBD3EE75A1 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
 		BA0BEF5F3E4F229E6A74ED3FF5009B9D /* Neuro-ID */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Neuro-ID"; path = Neuro_ID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA6BAAC95B696C7A918683D3A25DC56F /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		BBEF0FB0ABCADCFD0ECD11F2B38788B6 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
 		BC7BB84D596CA55A4B882962CA879BDE /* Pods-NeuroIdExampleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NeuroIdExampleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BEC3E0AB82EFF6B96568E58E9614362D /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		BEE0AA83A75C8D5DB1888BCA286A493F /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
-		C34DB93C029FED22EF462C85CE6B5CA4 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
-		C7E744E6772D3F2CA2C0F1593E4E7941 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		C6943D4ECCE6784826C60761AF490EFB /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
 		C944193DD06A32168A7141676874CEF9 /* Pods-NeuroIdExampleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NeuroIdExampleUITests-dummy.m"; sourceTree = "<group>"; };
-		CA28AFA6E8F7922769EA11C6F8B98F3D /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		CC31F240010F6411ABB71EDD1C4FEAB2 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
+		CC5E36E12443988208777DE7218D05A7 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
 		CD9CFD73DB5657F51403BCF550270B57 /* Pods-NeuroIdExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NeuroIdExample.modulemap"; sourceTree = "<group>"; };
-		D3BEF581A1F52CA6565A7D7132AF7CB0 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
-		DEA0DD1D80F4F163AA3B8DBB3C5C29AD /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		D085228861EF8EEA73BDC3508AB8B04B /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		D24A648CA9D6E30C4ED474DDE1735654 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		E09412612464F6DAF5BF03D29D7DCAE9 /* Neuro-ID-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Neuro-ID-prefix.pch"; sourceTree = "<group>"; };
+		E37243EEAFAFA2E4A668CBE3C78E58E6 /* Neuro-ID.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Neuro-ID.modulemap"; sourceTree = "<group>"; };
+		E4D9B3576131AA51B1DF1D3C58061791 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
 		E53522A0819B27FA6707179DBA1C816A /* Pods-NeuroIdExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeuroIdExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		E66C1FFDD0C239044CE1B76DAE88450A /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
-		E6AC0E494902BBAB035B76521DCA6AC4 /* Neuro-ID.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Neuro-ID.modulemap"; sourceTree = "<group>"; };
-		EDF6F9EDDCC883142AD72967C82FA9CE /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		F27D7EE389407BC51939CD031D8017B1 /* SDKPreferences.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SDKPreferences.swift; path = NeuroID/SDKPreferences.swift; sourceTree = "<group>"; };
-		F675C84DB4573F8973C265A893AD165C /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		F9121E34B2862814056C45EE81C0E94A /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
-		F9CDA43F6ADD54E3853A2DB01EB53C92 /* Neuro-ID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Neuro-ID.release.xcconfig"; sourceTree = "<group>"; };
+		E6D6D00D18FA783D751DC6319F269E30 /* Neuro-ID-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Neuro-ID-umbrella.h"; sourceTree = "<group>"; };
+		E6E52BA4A689D35C44D28735A92D796B /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		EBD290E413DC2A7511FE8FD0306CE337 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		ECE5B7F33968BB9DB6870E529997FE05 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		F245550FD4798FD6BA439B7C2D009B3A /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		F96125EC73CFB27A8BBEA18F81B3C653 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
 		FD0CE05D5D076B1B5190EE5DF97FD54E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -206,11 +208,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		581276C99736D81B72A4BEA1F88717FB /* Frameworks */ = {
+		D5A95751E72777D941FAC6E40245539A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				973E5CC96C16D68FCCDC907E6BDEBA5D /* Foundation.framework in Frameworks */,
+				4CF6E90758835B76C1764B8D3471E5B6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +227,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1443D7E4C132292DAD06B0BCD1ED6AFA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F5BDBE40C271BE4D9984F2ABFA0FC96 /* Alamofire.modulemap */,
+				27B39F2AD24D426CAACF474CE96200BA /* Alamofire-dummy.m */,
+				B08BBB99ECF6F98F0545B00816F8DE6A /* Alamofire-Info.plist */,
+				EBD290E413DC2A7511FE8FD0306CE337 /* Alamofire-prefix.pch */,
+				4BF52658E5DA9D15ACFD3C2AF49C3ADE /* Alamofire-umbrella.h */,
+				4ED42B2D5924E634B95B0E2E26CB8F2D /* Alamofire.debug.xcconfig */,
+				D24A648CA9D6E30C4ED474DDE1735654 /* Alamofire.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,11 +250,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		47B9D027140A517B3F511EE575B5668F /* Pods */ = {
+		45BC66EDFEEE8FC07125152BC22EF497 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F3EA6D8272AD9F4D398E769E4A691F1F /* Alamofire */,
-				A8C02D451B678AD3385828BD5507E5C2 /* Neuro-ID */,
+				6872255CF838698A67758EF62C63E3DD /* Alamofire */,
+				FA9D7AAE1E9E5DF01A0FAEFAAFE3DFB3 /* Neuro-ID */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -287,6 +304,66 @@
 			path = "Target Support Files/Pods-NeuroIdExample";
 			sourceTree = "<group>";
 		};
+		63F1675DE903E182043A486AAA028CFF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E37243EEAFAFA2E4A668CBE3C78E58E6 /* Neuro-ID.modulemap */,
+				425778699A11808C6098ECA02B55D406 /* Neuro-ID-dummy.m */,
+				8D7524EFD6518C114E42C9E75D034F90 /* Neuro-ID-Info.plist */,
+				E09412612464F6DAF5BF03D29D7DCAE9 /* Neuro-ID-prefix.pch */,
+				E6D6D00D18FA783D751DC6319F269E30 /* Neuro-ID-umbrella.h */,
+				A21E70ED03F06000BE13C1D8EE1B167C /* Neuro-ID.debug.xcconfig */,
+				257A76631C7205DE37E54A319797E3A1 /* Neuro-ID.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Neuro-ID";
+			sourceTree = "<group>";
+		};
+		6872255CF838698A67758EF62C63E3DD /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				68EE5F7B23C9A65D96CE13D9F92C7330 /* AFError.swift */,
+				A2CC8EF8A71070ACB6B192BBB4DF2F6E /* Alamofire.swift */,
+				C6943D4ECCE6784826C60761AF490EFB /* AlamofireExtended.swift */,
+				ECE5B7F33968BB9DB6870E529997FE05 /* AuthenticationInterceptor.swift */,
+				F96125EC73CFB27A8BBEA18F81B3C653 /* CachedResponseHandler.swift */,
+				0844195753057EB53C876F36E73F2544 /* Combine.swift */,
+				9A4241BFAAFB2B853C6C222F2CD6D0F5 /* Concurrency.swift */,
+				B0FA625F75FDE475D962F577DD3E50BB /* DispatchQueue+Alamofire.swift */,
+				52F71FE7D2D49CD55FA2F6D65613C96B /* EventMonitor.swift */,
+				1D5B1091618C642A57ED56FACBC2412E /* HTTPHeaders.swift */,
+				199822D0CFB4A8F7E34FEDF1E7CE8CF1 /* HTTPMethod.swift */,
+				1E59A4551CA750A34D4AA446F230FB15 /* MultipartFormData.swift */,
+				05339FB0925D04B0A468F4628D3F09D6 /* MultipartUpload.swift */,
+				4159D75C94595E3AB97E910EC62A9DF4 /* NetworkReachabilityManager.swift */,
+				E6E52BA4A689D35C44D28735A92D796B /* Notifications.swift */,
+				B060DB49311B29AB77CB5C5756DAAAAB /* OperationQueue+Alamofire.swift */,
+				B6127097309D6DC6E2AC6BDBD3EE75A1 /* ParameterEncoder.swift */,
+				83D7D3C97EFCF3551EC1A94BC7CA245E /* ParameterEncoding.swift */,
+				CC31F240010F6411ABB71EDD1C4FEAB2 /* Protected.swift */,
+				A2F21399DA589F017FE7380EBFDB7B02 /* RedirectHandler.swift */,
+				5DAD01B850DFD4B6465F3C2AC11F6236 /* Request.swift */,
+				0B4BC4D1A3DC805D91F7889319990B21 /* RequestInterceptor.swift */,
+				44144AEC9299578BDE863B6A3905448A /* RequestTaskMap.swift */,
+				31EA932628D115F6B72D18F59D96CEB2 /* Response.swift */,
+				1ED97BEEFA671A4D3288E7E89111AA1C /* ResponseSerialization.swift */,
+				17DE4FC021FBBCD2138FFDFE01A8FC7C /* Result+Alamofire.swift */,
+				BBEF0FB0ABCADCFD0ECD11F2B38788B6 /* RetryPolicy.swift */,
+				E4D9B3576131AA51B1DF1D3C58061791 /* ServerTrustEvaluation.swift */,
+				37E4ACCEAF9782038EACF850203A7EA4 /* Session.swift */,
+				90721653ED712B405B1C4FF118F31C85 /* SessionDelegate.swift */,
+				55FDF9E0F3A5F86832C98646D7AEB250 /* StringEncoding+Alamofire.swift */,
+				23EECE37E8D07BDBB5D16F39533D35C8 /* URLConvertible+URLRequestConvertible.swift */,
+				079D3332970EABF487671DDD39B12274 /* URLEncodedFormEncoder.swift */,
+				F245550FD4798FD6BA439B7C2D009B3A /* URLRequest+Alamofire.swift */,
+				CC5E36E12443988208777DE7218D05A7 /* URLSessionConfiguration+Alamofire.swift */,
+				D085228861EF8EEA73BDC3508AB8B04B /* Validation.swift */,
+				1443D7E4C132292DAD06B0BCD1ED6AFA /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
 		92E10DC955C1146322A5F6C6A6FFFD25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,57 +375,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A1B1378020DCC0348B2E715991D1F12C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E6AC0E494902BBAB035B76521DCA6AC4 /* Neuro-ID.modulemap */,
-				5BF13661BB13A99653BF34A1CD779F36 /* Neuro-ID-dummy.m */,
-				A281BFA82F50B4EE31A192ACD00A4D89 /* Neuro-ID-Info.plist */,
-				25C9967FADF185BB4D0CCA513CAEE642 /* Neuro-ID-prefix.pch */,
-				8D1D9F0262B74F911804EAA82F70292C /* Neuro-ID-umbrella.h */,
-				20A2F4BFDF3AEC1BA01EA24DF17778AE /* Neuro-ID.debug.xcconfig */,
-				F9CDA43F6ADD54E3853A2DB01EB53C92 /* Neuro-ID.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Neuro-ID";
-			sourceTree = "<group>";
-		};
-		A8C02D451B678AD3385828BD5507E5C2 /* Neuro-ID */ = {
-			isa = PBXGroup;
-			children = (
-				3942AE49220F795233E768B5F831FA6D /* DataStore.swift */,
-				A720B82F6FB3080B3BB1F809631BBE6B /* NeuroID.h */,
-				A44F29DF7C3377585975D9C2A02118A9 /* NeuroIDSensors.swift */,
-				29B41B142AA930DB6061FF59C6674E72 /* NeuroIDTracker.swift */,
-				3E1354A88D4EC956B32F1F17D02E8C02 /* NIDEvent.swift */,
-				F27D7EE389407BC51939CD031D8017B1 /* SDKPreferences.swift */,
-				A1B1378020DCC0348B2E715991D1F12C /* Support Files */,
-			);
-			name = "Neuro-ID";
-			path = "Neuro-ID";
-			sourceTree = "<group>";
-		};
-		B83C23867B056196282B9AB1A24015ED /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CA28AFA6E8F7922769EA11C6F8B98F3D /* Alamofire.modulemap */,
-				5D3515234D595F4F0CBC494D193C959E /* Alamofire-dummy.m */,
-				6E0F56401CB76DDEBDA6C8EA168F2FBE /* Alamofire-Info.plist */,
-				808943A6D404506BFA9087CCEBD3781A /* Alamofire-prefix.pch */,
-				8E1CC060F086F99EE6BD56055DC34016 /* Alamofire-umbrella.h */,
-				86151BF707C465D66C522D902B715684 /* Alamofire.debug.xcconfig */,
-				BEE0AA83A75C8D5DB1888BCA286A493F /* Alamofire.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				47B9D027140A517B3F511EE575B5668F /* Pods */,
+				45BC66EDFEEE8FC07125152BC22EF497 /* Pods */,
 				92E10DC955C1146322A5F6C6A6FFFD25 /* Products */,
 				D05AC57B4E1FF84BB73D1848797F76C8 /* Targets Support Files */,
 			);
@@ -363,49 +395,20 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F3EA6D8272AD9F4D398E769E4A691F1F /* Alamofire */ = {
+		FA9D7AAE1E9E5DF01A0FAEFAAFE3DFB3 /* Neuro-ID */ = {
 			isa = PBXGroup;
 			children = (
-				57FF26B6AA9C4CB9B9CBAA1028C16B79 /* AFError.swift */,
-				B10F7268F95EB5B039C051B70C65EC14 /* Alamofire.swift */,
-				7A763D9E62BDB260742E460515A439E5 /* AlamofireExtended.swift */,
-				B2F3F318761E36B500CCB468311F84C8 /* AuthenticationInterceptor.swift */,
-				59269F21A1CF9DC1596B963D050E543C /* CachedResponseHandler.swift */,
-				6EF441C562B83D16F6F35A6F75839D7E /* Combine.swift */,
-				05A6DF442291A7CBBF0D77E447E83EF7 /* Concurrency.swift */,
-				EDF6F9EDDCC883142AD72967C82FA9CE /* DispatchQueue+Alamofire.swift */,
-				DEA0DD1D80F4F163AA3B8DBB3C5C29AD /* EventMonitor.swift */,
-				A04C174E5C1EFDEDCCEA39AEBA2DC27E /* HTTPHeaders.swift */,
-				134FA71E7A12861DBC741B43760654B7 /* HTTPMethod.swift */,
-				7CA3C7B44C2C71F172D3399FF8B85514 /* MultipartFormData.swift */,
-				BA6BAAC95B696C7A918683D3A25DC56F /* MultipartUpload.swift */,
-				5337D58455CD257BD26733E39545D0A8 /* NetworkReachabilityManager.swift */,
-				6B33A573F17918D9D04D7F325A45A1A7 /* Notifications.swift */,
-				F675C84DB4573F8973C265A893AD165C /* OperationQueue+Alamofire.swift */,
-				1DAA9411B04E2D239FB5790D3756E737 /* ParameterEncoder.swift */,
-				5F3C1EC3AD32F7B15D916E6821F22749 /* ParameterEncoding.swift */,
-				277BA0DA2D4C326683A78E65298B5E60 /* Protected.swift */,
-				C34DB93C029FED22EF462C85CE6B5CA4 /* RedirectHandler.swift */,
-				A47A08AD2ED7F6990778F609AEBD9806 /* Request.swift */,
-				7068D5FE70D4E8E5D5A02461E76BECC3 /* RequestInterceptor.swift */,
-				3DD40F3F0AC70C317B7B416D47FEAFBB /* RequestTaskMap.swift */,
-				84ACBFCB54534C3440F7AAA556FF1041 /* Response.swift */,
-				64384EC19AB02E800FA5BBAE3E358516 /* ResponseSerialization.swift */,
-				C7E744E6772D3F2CA2C0F1593E4E7941 /* Result+Alamofire.swift */,
-				5CD5338B54B17859B30382F847959465 /* RetryPolicy.swift */,
-				6CA3F09A144C832566C99AD3C7DC3869 /* ServerTrustEvaluation.swift */,
-				017A633532780B1ACE25F39ACEF394E1 /* Session.swift */,
-				94B6F66398BB714C45473D5D914BE8F2 /* SessionDelegate.swift */,
-				7404D0EFDF2F46BEDD9683E5B191C1F3 /* StringEncoding+Alamofire.swift */,
-				E66C1FFDD0C239044CE1B76DAE88450A /* URLConvertible+URLRequestConvertible.swift */,
-				F9121E34B2862814056C45EE81C0E94A /* URLEncodedFormEncoder.swift */,
-				5446B430F6F9582F321C88AE1A42BA6B /* URLRequest+Alamofire.swift */,
-				D3BEF581A1F52CA6565A7D7132AF7CB0 /* URLSessionConfiguration+Alamofire.swift */,
-				BEC3E0AB82EFF6B96568E58E9614362D /* Validation.swift */,
-				B83C23867B056196282B9AB1A24015ED /* Support Files */,
+				1913681540A5555059BDC3767E698978 /* DataStore.swift */,
+				B30D6E39F3F7C3F2E3F47750ACB6BFC8 /* NeuroID.h */,
+				0949CA8D1EAF6B8020AC67C9FA6E4C2B /* NeuroIDSensors.swift */,
+				662B4B7BB7F9EB2B623E02022E8430AB /* NeuroIDTracker.swift */,
+				887B9C6D992A4F18BA4C9EB3E6CF6C9F /* NIDEvent.swift */,
+				5712338C144E9FCD5BC594493835D746 /* NIDMetadata.swift */,
+				0A0A5D7AA230F4D3EB78E91A34528B85 /* SDKPreferences.swift */,
+				63F1675DE903E182043A486AAA028CFF /* Support Files */,
 			);
-			name = Alamofire;
-			path = Alamofire;
+			name = "Neuro-ID";
+			path = "Neuro-ID";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,20 +422,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3E94CBD4C346C9E286121F261D5E34FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9D30366282B6B06E824193FEC3AC019 /* Neuro-ID-umbrella.h in Headers */,
+				9DE0D83E150D0619F25A2CF6F47BBB88 /* NeuroID.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54E6E9BA7663123504B78AE3421B1C95 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7F9C85EB2C4533432C5F1C6E754BC819 /* Alamofire-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		566DA0C2699FE0FAC093D804E38150E8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EB7C8FB43AFAC6749A323155FAF5B64 /* Neuro-ID-umbrella.h in Headers */,
-				1E24462788C37797BA545E00D1FDA175 /* NeuroID.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,8 +462,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				D90137E5C07E0825884BF97927DDBF9F /* PBXTargetDependency */,
-				E3FF0BAD9F372A3036D5FEB515B836FF /* PBXTargetDependency */,
+				20874B5BD45F5679A49C36657E2A5768 /* PBXTargetDependency */,
+				1BA91326AE8655E4359ED711D46686F7 /* PBXTargetDependency */,
 			);
 			name = "Pods-NeuroIdExampleUITests";
 			productName = Pods_NeuroIdExampleUITests;
@@ -469,17 +472,17 @@
 		};
 		3390B57A35E587A0E87DD61AE43D5076 /* Neuro-ID */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F5D06FEEF42C5E6A45228C6E70720AE /* Build configuration list for PBXNativeTarget "Neuro-ID" */;
+			buildConfigurationList = E707FF7406118AE6EA967AF8EC9E09C4 /* Build configuration list for PBXNativeTarget "Neuro-ID" */;
 			buildPhases = (
-				566DA0C2699FE0FAC093D804E38150E8 /* Headers */,
-				D398A8ABE61D044F516EBCE4789CC4C1 /* Sources */,
-				581276C99736D81B72A4BEA1F88717FB /* Frameworks */,
-				928D3B1C5DDC1A207B65E9AD4C81E2F9 /* Resources */,
+				3E94CBD4C346C9E286121F261D5E34FC /* Headers */,
+				4866C8DEA8853568686978547B1D2930 /* Sources */,
+				D5A95751E72777D941FAC6E40245539A /* Frameworks */,
+				F729F6BDA9D017E47C24396FE5B02DCA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				29585EA5AF7FAF8484A3DD5135D1B778 /* PBXTargetDependency */,
+				4D8D15AA0636C881C8F8000E3A1F2EE9 /* PBXTargetDependency */,
 			);
 			name = "Neuro-ID";
 			productName = Neuro_ID;
@@ -498,8 +501,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				53F7B1DCF47FC5DC0FAA6498CEEE5EC5 /* PBXTargetDependency */,
-				FAEDE2CF85A75394D150958553BA48E0 /* PBXTargetDependency */,
+				6FE9A2236A0F3480A042AFEE373C9D6E /* PBXTargetDependency */,
+				6E9B9CD5932A755A8B997E9317AF72BD /* PBXTargetDependency */,
 			);
 			name = "Pods-NeuroIdExample";
 			productName = Pods_NeuroIdExample;
@@ -530,8 +533,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -562,13 +565,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		928D3B1C5DDC1A207B65E9AD4C81E2F9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B869A463670DB073E7B526547164B701 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -583,9 +579,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F729F6BDA9D017E47C24396FE5B02DCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4866C8DEA8853568686978547B1D2930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AE6529914E42AC2422A6152585B3EEC /* DataStore.swift in Sources */,
+				B886FFC90EE26A6357810845C84BB0A3 /* Neuro-ID-dummy.m in Sources */,
+				ECE492F53B0465B6F69921522EA51E95 /* NeuroIDSensors.swift in Sources */,
+				B25E0BDAB176DF2294EE93CAFDF5B878 /* NeuroIDTracker.swift in Sources */,
+				AAACECA84D09FF6B9AFEB366205C1319 /* NIDEvent.swift in Sources */,
+				F984517180E7C4B68B67D414960F88AE /* NIDMetadata.swift in Sources */,
+				F3F7747EE08B03F18AB2678C22735835 /* SDKPreferences.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94D488A367B1F8B39BAF74C501E280B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -646,51 +663,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D398A8ABE61D044F516EBCE4789CC4C1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EB46575FFCA7939E78BA73E77A80297 /* DataStore.swift in Sources */,
-				859392EBFA3271D43FE878AE8214443A /* Neuro-ID-dummy.m in Sources */,
-				9C4CF57457F0CEEFB4D9327700B942C1 /* NeuroIDSensors.swift in Sources */,
-				8C8BE835EA0B2FCB3A2581DAF6C93BA2 /* NeuroIDTracker.swift in Sources */,
-				40D3ECD4B05E4B3DAF460E694E5366B3 /* NIDEvent.swift in Sources */,
-				54C21EFDA05A82E410232BF800A2BBFB /* SDKPreferences.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		29585EA5AF7FAF8484A3DD5135D1B778 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = DDBE1A8D0EE52DB996C0E56A93C042BA /* PBXContainerItemProxy */;
-		};
-		53F7B1DCF47FC5DC0FAA6498CEEE5EC5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = FCF80ED2745A328F267B49C057EC6611 /* PBXContainerItemProxy */;
-		};
-		D90137E5C07E0825884BF97927DDBF9F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
-			targetProxy = 7685FC13189D778743EACECEEC65FD56 /* PBXContainerItemProxy */;
-		};
-		E3FF0BAD9F372A3036D5FEB515B836FF /* PBXTargetDependency */ = {
+		1BA91326AE8655E4359ED711D46686F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Neuro-ID";
 			target = 3390B57A35E587A0E87DD61AE43D5076 /* Neuro-ID */;
-			targetProxy = EAF2A2B87A5A3D2B32F1235667F92A5E /* PBXContainerItemProxy */;
+			targetProxy = C834790939C915F87627A9FAA9EADA53 /* PBXContainerItemProxy */;
 		};
-		FAEDE2CF85A75394D150958553BA48E0 /* PBXTargetDependency */ = {
+		20874B5BD45F5679A49C36657E2A5768 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = B7FCD6C6B4321C934AA8406D82AE991F /* PBXContainerItemProxy */;
+		};
+		4D8D15AA0636C881C8F8000E3A1F2EE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 5C2673C27ABEA2AD1DCBAB89769F1A78 /* PBXContainerItemProxy */;
+		};
+		6E9B9CD5932A755A8B997E9317AF72BD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Neuro-ID";
 			target = 3390B57A35E587A0E87DD61AE43D5076 /* Neuro-ID */;
-			targetProxy = 77B77539B45A8C07DACB7037404A7041 /* PBXContainerItemProxy */;
+			targetProxy = E227DD51BC8738D8BDA4B9B183AD8740 /* PBXContainerItemProxy */;
+		};
+		6FE9A2236A0F3480A042AFEE373C9D6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 46A9D7DAFF2DD2A8AC499F67447F0A58 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -732,9 +736,9 @@
 			};
 			name = Debug;
 		};
-		11B48CA40777E603FAC28E54CF2AE09A /* Release */ = {
+		087436D4C0361AA5BA8514A91EEFC198 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEE0AA83A75C8D5DB1888BCA286A493F /* Alamofire.release.xcconfig */;
+			baseConfigurationReference = D24A648CA9D6E30C4ED474DDE1735654 /* Alamofire.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -760,48 +764,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.5;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		18ED0E3ED7EF3766C3532D55D83087E9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86151BF707C465D66C522D902B715684 /* Alamofire.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
-				PRODUCT_MODULE_NAME = Alamofire;
-				PRODUCT_NAME = Alamofire;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.5;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
+			name = Staging;
 		};
 		218CD51321D9AD8DB792E7EFE2DD18E7 /* Staging */ = {
 			isa = XCBuildConfiguration;
@@ -841,9 +810,9 @@
 			};
 			name = Staging;
 		};
-		39FBF075CD73758F90AE5EDEF2FDC3FF /* Staging */ = {
+		38F46DE18E7E2D843C3A9D6EDB4C5319 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEE0AA83A75C8D5DB1888BCA286A493F /* Alamofire.release.xcconfig */;
+			baseConfigurationReference = D24A648CA9D6E30C4ED474DDE1735654 /* Alamofire.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -869,13 +838,49 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.5;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Staging;
+			name = Release;
+		};
+		552801BE9DBCF9398DBA89A218380E1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 257A76631C7205DE37E54A319797E3A1 /* Neuro-ID.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Neuro-ID/Neuro-ID-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Neuro-ID/Neuro-ID-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Neuro-ID/Neuro-ID.modulemap";
+				PRODUCT_MODULE_NAME = Neuro_ID;
+				PRODUCT_NAME = Neuro_ID;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1080,9 +1085,45 @@
 			};
 			name = Release;
 		};
-		9AEE296E1E2897D39EA033878B89D6EE /* Debug */ = {
+		9AB969A5B4FCC35060FB82F5EB3967D2 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20A2F4BFDF3AEC1BA01EA24DF17778AE /* Neuro-ID.debug.xcconfig */;
+			baseConfigurationReference = 257A76631C7205DE37E54A319797E3A1 /* Neuro-ID.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Neuro-ID/Neuro-ID-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Neuro-ID/Neuro-ID-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Neuro-ID/Neuro-ID.modulemap";
+				PRODUCT_MODULE_NAME = Neuro_ID;
+				PRODUCT_NAME = Neuro_ID;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Staging;
+		};
+		9B9069F5601530D255697A76EB570427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A21E70ED03F06000BE13C1D8EE1B167C /* Neuro-ID.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1253,9 +1294,9 @@
 			};
 			name = Staging;
 		};
-		E011C1671D5B1B30AA3D4F27B63F832E /* Staging */ = {
+		E6FA6F9F5B28022C35CCA15079FCED94 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9CDA43F6ADD54E3853A2DB01EB53C92 /* Neuro-ID.release.xcconfig */;
+			baseConfigurationReference = 4ED42B2D5924E634B95B0E2E26CB8F2D /* Alamofire.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1266,64 +1307,27 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Neuro-ID/Neuro-ID-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Neuro-ID/Neuro-ID-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Neuro-ID/Neuro-ID.modulemap";
-				PRODUCT_MODULE_NAME = Neuro_ID;
-				PRODUCT_NAME = Neuro_ID;
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Staging;
-		};
-		FD553B27AC83A8F6FAE904C38EB98476 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9CDA43F6ADD54E3853A2DB01EB53C92 /* Neuro-ID.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Neuro-ID/Neuro-ID-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Neuro-ID/Neuro-ID-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Neuro-ID/Neuro-ID.modulemap";
-				PRODUCT_MODULE_NAME = Neuro_ID;
-				PRODUCT_NAME = Neuro_ID;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1341,9 +1345,9 @@
 		3FDAA3ACB3A4EC9E736517C4E14D4580 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				18ED0E3ED7EF3766C3532D55D83087E9 /* Debug */,
-				11B48CA40777E603FAC28E54CF2AE09A /* Release */,
-				39FBF075CD73758F90AE5EDEF2FDC3FF /* Staging */,
+				E6FA6F9F5B28022C35CCA15079FCED94 /* Debug */,
+				38F46DE18E7E2D843C3A9D6EDB4C5319 /* Release */,
+				087436D4C0361AA5BA8514A91EEFC198 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1358,22 +1362,22 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F5D06FEEF42C5E6A45228C6E70720AE /* Build configuration list for PBXNativeTarget "Neuro-ID" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9AEE296E1E2897D39EA033878B89D6EE /* Debug */,
-				FD553B27AC83A8F6FAE904C38EB98476 /* Release */,
-				E011C1671D5B1B30AA3D4F27B63F832E /* Staging */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		B5E972EB533DD79B1CC2FA28408CF12A /* Build configuration list for PBXNativeTarget "Pods-NeuroIdExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94697DD4ECBDCEABEE70D183BCA1E83A /* Debug */,
 				9A83F26D68AF6AA5B0E0B1258A576B86 /* Release */,
 				218CD51321D9AD8DB792E7EFE2DD18E7 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E707FF7406118AE6EA967AF8EC9E09C4 /* Build configuration list for PBXNativeTarget "Neuro-ID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9069F5601530D255697A76EB570427 /* Debug */,
+				552801BE9DBCF9398DBA89A218380E1F /* Release */,
+				9AB969A5B4FCC35060FB82F5EB3967D2 /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

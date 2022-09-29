@@ -5,6 +5,7 @@
 //  Created by jose perez on 12/05/22.
 //
 import UIKit
+import Neuro_ID
 final class NILoanOptionsVC: UIViewController {
     @IBOutlet weak var ageAtWorklbl: UITextField!
     @IBOutlet weak var economicDependentslbl: UITextField!
@@ -15,6 +16,14 @@ final class NILoanOptionsVC: UIViewController {
         super.viewDidLoad()
         setupKeyboardHiding()
         setupNavBarImage()
+    }
+    @IBAction func onClick(_ sender: Any) {
+        var event = NIDEvent(type: NIDEventName.stopSession, view: UIView.init())
+        NeuroID.saveEventToLocalDataStore(event)
+        NeuroID.groupAndPOST()
+        NeuroID.clearSession()
+        
+        print("Session Stop")
     }
     /// Setup navigation bar image with logo
     private func setupNavBarImage() {

@@ -39,7 +39,7 @@ final class NIOnbardingVC: UIViewController {
         setupTextFieldDelegate()
         setupDateBirthPicker()
         sessionidlbl.text = id
-        NeuroID.setUserID("nid_user_ios_swift")
+        NeuroID.setUserID("nid_user_ios_swift_newer")
     }
     /// Create and setup the date picker as the input for date birth
     private func setupDateBirthPicker() {
