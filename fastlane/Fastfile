@@ -18,7 +18,7 @@ default_platform(:ios)
 platform :ios do
   desc "Running UI testing"
   lane :test do
-    run_tests(scheme: "NeuroIdExample")
+    run_tests(scheme: "NeuroIdExample", reset_simulator: true, clean: true)
   end
 
   desc "Update internal version"
