@@ -23,6 +23,10 @@ class NeuroIdExampleUITests: XCTestCase {
 
         app.launch()
         app.activate()
+        let date = Date()
+        let formatter = DateFormatter()
+        let strDate = formatter.string(from: date)
+        UserDefaults.standard.set(strDate, forKey: "nid_user_id")
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     override func tearDownWithError() throws {
@@ -50,7 +54,6 @@ class NeuroIdExampleUITests: XCTestCase {
         returnButton.tap()
         elementsQuery/*@START_MENU_TOKEN@*/.textFields["lastName"]/*[[".textFields[\"Last Name\"]",".textFields[\"lastName\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         returnButton.tap()
-        
     }
     func testCreateCopyPasteEvent() {
         app/*@START_MENU_TOKEN@*/.staticTexts["Get Started"]/*[[".buttons[\"Get Started\"].staticTexts[\"Get Started\"]",".staticTexts[\"Get Started\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
