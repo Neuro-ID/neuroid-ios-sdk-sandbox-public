@@ -33,7 +33,11 @@ class NeuroIdExampleUITests: XCTestCase {
     }
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-        Thread.sleep(forTimeInterval: 6)
+        let exp = expectation(description: "Wait 6 seconds to send last events.")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
+            exp.fulfill()
+        }
+        wait(for: [exp], timeout: 7)
     }
     
     func testCreateSessionID() {
