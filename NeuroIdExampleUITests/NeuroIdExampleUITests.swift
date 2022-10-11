@@ -37,8 +37,6 @@ class NeuroIdExampleUITests: XCTestCase {
     }
     
     func testCreateSessionID() {
-        let userID = NeuroID.getUserID()
-        print("****** -> Value get from user ID: \(userID)")
         app/*@START_MENU_TOKEN@*/.staticTexts["Get Started"]/*[[".buttons[\"Get Started\"].staticTexts[\"Get Started\"]",".staticTexts[\"Get Started\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         Thread.sleep(forTimeInterval: 2)
         let elementsQuery = app.scrollViews.otherElements
@@ -47,16 +45,12 @@ class NeuroIdExampleUITests: XCTestCase {
         app/*@START_MENU_TOKEN@*/.staticTexts["Agree and Check Tour Loan Options"]/*[[".buttons[\"Agree and Check Tour Loan Options\"].staticTexts[\"Agree and Check Tour Loan Options\"]",".staticTexts[\"Agree and Check Tour Loan Options\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
     }
     func testCreateRegisterTargetEvent() {
-        let userID = NeuroID.getUserID()
-        print("****** -> Value get from user ID: \(userID)")
         app/*@START_MENU_TOKEN@*/.staticTexts["Get Started"]/*[[".buttons[\"Get Started\"].staticTexts[\"Get Started\"]",".staticTexts[\"Get Started\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         Thread.sleep(forTimeInterval: 2)
         let element = app.scrollViews.children(matching: .other).element(boundBy: 0)
         element.children(matching: .other).element(boundBy: 4).swipeUp()
     }
     func testCreateTouchEvent() {
-        let userID = NeuroID.getUserID()
-        print("****** -> Value get from user ID: \(userID)")
         app.buttons["Get Started"].tap()
         Thread.sleep(forTimeInterval: 2)
         let elementsQuery = app.scrollViews.otherElements
@@ -67,8 +61,6 @@ class NeuroIdExampleUITests: XCTestCase {
         returnButton.tap()
     }
     func testCreateCopyPasteEvent() {
-        let userID = NeuroID.getUserID()
-        print("****** -> Value get from user ID: \(userID)")
         app/*@START_MENU_TOKEN@*/.staticTexts["Get Started"]/*[[".buttons[\"Get Started\"].staticTexts[\"Get Started\"]",".staticTexts[\"Get Started\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         Thread.sleep(forTimeInterval: 1)
         /// Tap textfield
@@ -118,8 +110,6 @@ class NeuroIdExampleUITests: XCTestCase {
         app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
     }
     func testCreateChangeTextEvent() {
-        let userID = NeuroID.getUserID()
-        print("****** -> Value get from user ID: \(userID)")
         app/*@START_MENU_TOKEN@*/.staticTexts["Get Started"]/*[[".buttons[\"Get Started\"].staticTexts[\"Get Started\"]",".staticTexts[\"Get Started\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         Thread.sleep(forTimeInterval: 2)
                 /// Tap textfield
@@ -195,8 +185,6 @@ class NeuroIdExampleUITests: XCTestCase {
             }
     }
     func testCreateRisckySession() {
-        let userID = NeuroID.getUserID()
-        print("****** -> Value get from user ID: \(userID)")
         app/*@START_MENU_TOKEN@*/.staticTexts["Get Started"]/*[[".buttons[\"Get Started\"].staticTexts[\"Get Started\"]",".staticTexts[\"Get Started\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         Thread.sleep(forTimeInterval: 2)
         let elementsQuery = app.scrollViews.otherElements
