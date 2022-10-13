@@ -39,6 +39,13 @@ extension XCUIApplication {
         }
     }
 }
+extension XCUIElement {
+    func clear(_ text: String) {
+        for _ in 0...text.count {
+            XCUIApplication()/*@START_MENU_TOKEN@*/.keys["delete"]/*[[".keyboards",".keys[\"suprimir\"]",".keys[\"delete\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        }
+    }
+}
 //  MARK: - UI TEST
 class NeuroIdExampleUITests: XCTestCase {
 
@@ -295,7 +302,7 @@ class NeuroIdExampleUITests: XCTestCase {
         app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
     }
     
-    func testCreateRisckySession() {
+    func testRiskyScoreiOS() {
         testCount += 1
         app/*@START_MENU_TOKEN@*/.staticTexts["Get Started"]/*[[".buttons[\"Get Started\"].staticTexts[\"Get Started\"]",".staticTexts[\"Get Started\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         let elementsQuery = app.scrollViews.otherElements
@@ -349,15 +356,95 @@ class NeuroIdExampleUITests: XCTestCase {
         emailTextField.tap()
         emailTextField.doubleTap()
         app.pressCopy()
-        
+    }
+    func testRiskyScoreBaseline() {
+        testCount += 1
+        app/*@START_MENU_TOKEN@*/.staticTexts["Get Started"]/*[[".buttons[\"Get Started\"].staticTexts[\"Get Started\"]",".staticTexts[\"Get Started\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        let score = expectation(description: "Wait 12 seconds")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 12) {
+            score.fulfill()
+        }
+        wait(for: [score], timeout: 13)
+        let elementsQuery = app.scrollViews.otherElements
+        let firstnameTextField = elementsQuery/*@START_MENU_TOKEN@*/.textFields["firstName"]/*[[".textFields[\"First Name\"]",".textFields[\"firstName\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        let lastnameTextField = elementsQuery.textFields["lastName"]
+        let emailTextField = elementsQuery.textFields["email"]
+        let cityTextField = elementsQuery.textFields["city"]
+        let zipCodeTextField = elementsQuery.textFields["homeZipCode"]
+        let employerTextField = elementsQuery.textFields["employerlbl"]
+        let phoneNumberTextField = elementsQuery.textFields["phoneNumber"]
+        let dateTextField = elementsQuery.textFields["dobMonth"]
+        UIPasteboard.general.string = "JOSE"
+        firstnameTextField.tap()
+        firstnameTextField.tap()
+        app.pressPaste()
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        UIPasteboard.general.string = "PEREZMTZ"
+        lastnameTextField.tap()
+        lastnameTextField.tap()
+        app.pressPaste()
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        UIPasteboard.general.string = "02/22/2022"
+        dateTextField.tap()
+        dateTextField.tap()
+        app.pressPaste()
+        app.buttons["Done"].tap()
+        UIPasteboard.general.string = "jose@perez.mtz"
+        emailTextField.tap()
+        emailTextField.tap()
+        app.pressPaste()
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        UIPasteboard.general.string = "Country, City"
+        cityTextField.tap()
+        cityTextField.tap()
+        app.pressPaste()
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        firstnameTextField.tap()
+        let delete = String(repeating: XCUIKeyboardKey.delete.rawValue, count: "JOSE".count)
+        firstnameTextField.typeText(delete)
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        lastnameTextField.tap()
+        let clear = String(repeating: XCUIKeyboardKey.delete.rawValue, count: "PEREZMTZ".count)
+        lastnameTextField.typeText(clear)
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        emailTextField.tap()
+        let erease = String(repeating: XCUIKeyboardKey.delete.rawValue, count: "jose@perez.mtz".count)
+        emailTextField.typeText(erease)
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        cityTextField.tap()
+        let city = String(repeating: XCUIKeyboardKey.delete.rawValue, count: "Country, City".count)
+        cityTextField.typeText(city)
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        firstnameTextField.tap()
+        firstnameTextField.typeText("Jose")
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        lastnameTextField.tap()
+        lastnameTextField.typeText("Perez")
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        emailTextField.tap()
+        emailTextField.typeText("jose@perez.com")
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        cityTextField.tap()
+        cityTextField.typeText("City, Country")
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        zipCodeTextField.tap()
+        zipCodeTextField.typeText("647000")
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        phoneNumberTextField.tap()
+        phoneNumberTextField.typeText("+529511234567")
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        employerTextField.tap()
+        employerTextField.typeText("Neuro ID")
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
     }
 }
 struct NIDScoreResponse: Codable, CustomStringConvertible {
     var description: String {
-        return "SERVER RESPONSE \n status: \(status ?? "")\n message: \(message ?? "")\n profile: \(profile ?? NIDProfileScore())"
+        return "SERVER RESPONSE \n status: \(status ?? "")\n message: \(message ?? "")\n id: \(id ?? "")\n profile: \(profile ?? NIDProfileScore())"
     }
     var status: String?
     var message: String?
+    var id: String?
     var profile: NIDProfileScore?
 }
 struct NIDProfileScore: Codable, CustomStringConvertible {
