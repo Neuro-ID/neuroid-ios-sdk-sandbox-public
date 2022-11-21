@@ -131,7 +131,25 @@ class NeuroIdExampleUITests: XCTestCase {
         app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
         elementsQuery.staticTexts["First Name:"]/*@START_MENU_TOKEN@*/.swipeUp()/*[[".swipeUp()",".swipeLeft()"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
         elementsQuery.buttons["Continue"].tap()
-        app/*@START_MENU_TOKEN@*/.staticTexts["Agree and Check Tour Loan Options"]/*[[".buttons[\"Agree and Check Tour Loan Options\"].staticTexts[\"Agree and Check Tour Loan Options\"]",".staticTexts[\"Agree and Check Tour Loan Options\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        let nextButton = app.tables["contentTableView"]/*@START_MENU_TOKEN@*/.buttons["Next"]/*[[".cells.buttons[\"Next\"]",".buttons[\"Next\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        nextButton.tap()
+        nextButton.tap()
+        nextButton.tap()
+        let fntf = app.tables["contentTableView"].textFields["FirstName"]
+        let lntf = app.tables["contentTableView"].textFields["LastName"]
+        let atf = app.tables["contentTableView"].textFields["Address"]
+        let eatf = app.tables["contentTableView"].textFields["EmployerAddress"]
+        fntf.tap()
+        fntf.typeText("neuroid")
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        lntf.tap()
+        lntf.typeText("neuroid")
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        atf.tap()
+        atf.typeText("neuroid")
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        eatf.tap()
+        eatf.typeText("neuroid")
         let score2 = expectation(description: "Wait 4 seconds to get last score.")
         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             score2.fulfill()
@@ -190,7 +208,6 @@ class NeuroIdExampleUITests: XCTestCase {
         firstnameTextField.typeText("neuro")
         app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
         /// Tap for copy
-        firstnameTextField.tap()
         firstnameTextField.doubleTap()
         app.pressCopy()
         app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
@@ -373,7 +390,6 @@ class NeuroIdExampleUITests: XCTestCase {
         let zipCodeTextField = elementsQuery.textFields["homeZipCode"]
         let employerTextField = elementsQuery.textFields["employerlbl"]
         let phoneNumberTextField = elementsQuery.textFields["phoneNumber"]
-        let dateTextField = elementsQuery.textFields["dobMonth"]
         UIPasteboard.general.string = "JOSE"
         firstnameTextField.tap()
         firstnameTextField.tap()
@@ -384,11 +400,6 @@ class NeuroIdExampleUITests: XCTestCase {
         lastnameTextField.tap()
         app.pressPaste()
         app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
-        UIPasteboard.general.string = "02/22/2022"
-        dateTextField.tap()
-        dateTextField.tap()
-        app.pressPaste()
-        app.buttons["Done"].tap()
         UIPasteboard.general.string = "jose@perez.mtz"
         emailTextField.tap()
         emailTextField.tap()
@@ -397,6 +408,21 @@ class NeuroIdExampleUITests: XCTestCase {
         UIPasteboard.general.string = "Country, City"
         cityTextField.tap()
         cityTextField.tap()
+        app.pressPaste()
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        UIPasteboard.general.string = "760000"
+        zipCodeTextField.tap()
+        zipCodeTextField.tap()
+        app.pressPaste()
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        UIPasteboard.general.string = "+11234567890"
+        phoneNumberTextField.tap()
+        phoneNumberTextField.tap()
+        app.pressPaste()
+        app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        UIPasteboard.general.string = "NEUROID_WORKER"
+        employerTextField.tap()
+        employerTextField.tap()
         app.pressPaste()
         app/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
         firstnameTextField.tap()
@@ -440,17 +466,17 @@ class NeuroIdExampleUITests: XCTestCase {
 }
 struct NIDScoreResponse: Codable, CustomStringConvertible {
     var description: String {
-        return "SERVER RESPONSE \n status: \(status ?? "")\n message: \(message ?? "")\n id: \(id ?? "")\n profile: \(profile ?? NIDProfileScore())"
+        return "SERVER RESPONSE \n status: \(status ?? "")\n message: \(message ?? "")\n profile: \(profile ?? NIDProfileScore())"
     }
     var status: String?
     var message: String?
-    var id: String?
     var profile: NIDProfileScore?
 }
 struct NIDProfileScore: Codable, CustomStringConvertible {
     var description: String {
-        return "\n - siteId: \(siteId ?? "")\n - funnel: \(funnel ?? "")\n - clientId: \(clientId ?? "")\n - signals: \(signals ?? [])"
+        return "\n id: \(id ?? "")\n - siteId: \(siteId ?? "")\n - funnel: \(funnel ?? "")\n - clientId: \(clientId ?? "")\n - signals: \(signals ?? [])"
     }
+    var id: String?
     var siteId: String?
     var funnel: String?
     var clientId: String?

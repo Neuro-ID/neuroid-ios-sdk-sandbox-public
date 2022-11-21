@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,8 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NILoanOptionsVC" customModule="NeuroIdExample" customModuleProvider="target">
             <connections>
-                <outlet property="ageAtWorklbl" destination="bD8-4u-CrK" id="XjZ-UI-vxD"/>
-                <outlet property="economicDependentslbl" destination="M8o-SL-kgw" id="rBi-dL-v6j"/>
+                <outlet property="contentTableView" destination="329-jT-8OZ" id="K5l-D3-UYp"/>
                 <outlet property="view" destination="iN0-l3-epB" id="lup-nU-kXV"/>
             </connections>
         </placeholder>
@@ -21,144 +20,23 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checking your loan options does not affect ayour credit score." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="2Q1-rs-Nyz">
-                    <rect key="frame" x="16" y="60" width="382" height="41"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" systemColor="secondaryLabelColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age at work:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sjs-wT-p29">
-                    <rect key="frame" x="16" y="117" width="382" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age at work" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bD8-4u-CrK">
-                    <rect key="frame" x="16" y="154" width="382" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Own house?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUO-sl-PQm">
-                    <rect key="frame" x="16" y="204" width="382" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" systemColor="secondaryLabelColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <segmentedControl toolTip="Own house?" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="K4b-CZ-NIX">
-                    <rect key="frame" x="16" y="241" width="100" height="32"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="100" id="kDc-4u-Mjc"/>
-                    </constraints>
-                    <segments>
-                        <segment title="yes"/>
-                        <segment title="no"/>
-                    </segments>
-                </segmentedControl>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have a car?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHP-dP-WCQ">
-                    <rect key="frame" x="16" y="304" width="382" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" systemColor="secondaryLabelColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <segmentedControl toolTip="Do you have a car?" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="i35-IF-GeG">
-                    <rect key="frame" x="16" y="341" width="100" height="32"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="100" id="iUG-6g-fL7"/>
-                    </constraints>
-                    <segments>
-                        <segment title="yes"/>
-                        <segment title="no"/>
-                    </segments>
-                </segmentedControl>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marital Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2s-uJ-8Zs">
-                    <rect key="frame" x="16" y="404" width="382" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" systemColor="secondaryLabelColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <segmentedControl toolTip="Marital Status" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="LIk-9D-oLq">
-                    <rect key="frame" x="16" y="441" width="150" height="32"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="150" id="k5v-Eh-uEE"/>
-                    </constraints>
-                    <segments>
-                        <segment title="Single"/>
-                        <segment title="Married"/>
-                    </segments>
-                </segmentedControl>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of economic dependents" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M8o-SL-kgw">
-                    <rect key="frame" x="16" y="541" width="382" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of economic dependents:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNh-Bf-F8k">
-                    <rect key="frame" x="16" y="504" width="382" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checking your loan options does not affect ayour credit score." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="bDu-4C-YOe">
-                    <rect key="frame" x="16" y="805" width="382" height="41"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" systemColor="secondaryLabelColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df4-7x-mHr">
-                    <rect key="frame" x="16" y="758" width="382" height="31"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Agree and Check Tour Loan Options"/>
-                    <connections>
-                        <action selector="onClick:" destination="-1" eventType="touchDown" id="fuw-rv-Zq2"/>
-                    </connections>
-                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="329-jT-8OZ">
+                    <rect key="frame" x="0.0" y="48" width="414" height="582.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="M8o-SL-kgw" firstAttribute="top" secondItem="qNh-Bf-F8k" secondAttribute="bottom" constant="16" id="1FS-cS-ieB"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="r2s-uJ-8Zs" secondAttribute="trailing" constant="16" id="2fa-7I-pk4"/>
-                <constraint firstItem="r2s-uJ-8Zs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="4zU-UT-3EH"/>
-                <constraint firstItem="RHP-dP-WCQ" firstAttribute="top" secondItem="K4b-CZ-NIX" secondAttribute="bottom" constant="32" id="6oN-am-Z7s"/>
-                <constraint firstItem="LIk-9D-oLq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="8df-YK-gVk"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qNh-Bf-F8k" secondAttribute="trailing" constant="16" id="99D-c5-F5g"/>
-                <constraint firstItem="M8o-SL-kgw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="9Ik-yK-svv"/>
-                <constraint firstItem="LIk-9D-oLq" firstAttribute="top" secondItem="r2s-uJ-8Zs" secondAttribute="bottom" constant="16" id="9Yh-dg-kK1"/>
-                <constraint firstItem="Sjs-wT-p29" firstAttribute="top" secondItem="2Q1-rs-Nyz" secondAttribute="bottom" constant="16" id="AXF-xv-kgk"/>
-                <constraint firstItem="i35-IF-GeG" firstAttribute="top" secondItem="RHP-dP-WCQ" secondAttribute="bottom" constant="16" id="DYW-jY-yk5"/>
-                <constraint firstItem="qNh-Bf-F8k" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="FI9-p8-NMA"/>
-                <constraint firstItem="2Q1-rs-Nyz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="GvQ-ic-5gb"/>
-                <constraint firstItem="r2s-uJ-8Zs" firstAttribute="top" secondItem="i35-IF-GeG" secondAttribute="bottom" constant="32" id="HMg-7b-NdI"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2Q1-rs-Nyz" secondAttribute="trailing" constant="16" id="Ick-KT-ROI"/>
-                <constraint firstItem="Sjs-wT-p29" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="MR1-3d-hy0"/>
-                <constraint firstItem="VUO-sl-PQm" firstAttribute="top" secondItem="bD8-4u-CrK" secondAttribute="bottom" constant="16" id="PVN-Xu-Xes"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RHP-dP-WCQ" secondAttribute="trailing" constant="16" id="TiV-Sj-yOd"/>
-                <constraint firstItem="bDu-4C-YOe" firstAttribute="top" secondItem="df4-7x-mHr" secondAttribute="bottom" constant="16" id="aLI-ak-LaK"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="M8o-SL-kgw" secondAttribute="trailing" constant="16" id="bvl-EV-mwS"/>
-                <constraint firstItem="bDu-4C-YOe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="d8K-Se-sBv"/>
-                <constraint firstItem="K4b-CZ-NIX" firstAttribute="top" secondItem="VUO-sl-PQm" secondAttribute="bottom" constant="16" id="dmd-N1-fbB"/>
-                <constraint firstItem="i35-IF-GeG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="e6H-Hj-FfY"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bDu-4C-YOe" secondAttribute="trailing" constant="16" id="flY-MY-VrX"/>
-                <constraint firstItem="df4-7x-mHr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="frT-9x-doO"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VUO-sl-PQm" secondAttribute="trailing" constant="16" id="ipv-YZ-m8C"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bDu-4C-YOe" secondAttribute="bottom" constant="16" id="k2F-TO-9vK"/>
-                <constraint firstItem="RHP-dP-WCQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="km1-gr-RjM"/>
-                <constraint firstItem="bD8-4u-CrK" firstAttribute="top" secondItem="Sjs-wT-p29" secondAttribute="bottom" constant="16" id="lwT-eQ-NUw"/>
-                <constraint firstItem="VUO-sl-PQm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="mNi-0b-v1Q"/>
-                <constraint firstItem="qNh-Bf-F8k" firstAttribute="top" secondItem="LIk-9D-oLq" secondAttribute="bottom" constant="32" id="naP-yh-4BX"/>
-                <constraint firstItem="K4b-CZ-NIX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="oln-Ew-qwq"/>
-                <constraint firstItem="2Q1-rs-Nyz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="pj2-V3-6Jw"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bD8-4u-CrK" secondAttribute="trailing" constant="16" id="vrg-Jk-Gy9"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Sjs-wT-p29" secondAttribute="trailing" constant="16" id="wij-bV-H2S"/>
-                <constraint firstItem="bD8-4u-CrK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="xp1-JJ-2iH"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="df4-7x-mHr" secondAttribute="trailing" constant="16" id="ycV-p9-oou"/>
+                <constraint firstItem="329-jT-8OZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="7p4-uf-Yo1"/>
+                <constraint firstItem="329-jT-8OZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GEF-So-k1K"/>
+                <constraint firstItem="329-jT-8OZ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.65" id="YKT-xR-swh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="329-jT-8OZ" secondAttribute="trailing" id="ZGO-1z-hMs"/>
             </constraints>
             <point key="canvasLocation" x="139" y="154"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

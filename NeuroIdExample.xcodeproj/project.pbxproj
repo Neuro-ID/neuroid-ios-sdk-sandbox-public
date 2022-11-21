@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0707D3A1282D4C9900C1F425 /* NILoanOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0707D3A0282D4C9900C1F425 /* NILoanOptionsVC.swift */; };
 		0707D3A3282D4CCC00C1F425 /* NILoanOptionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0707D3A2282D4CCC00C1F425 /* NILoanOptionsVC.xib */; };
+		079AEC7A291C188F00007035 /* NISimpleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079AEC79291C188F00007035 /* NISimpleCell.swift */; };
+		079AEC7C291C18E800007035 /* NISimpleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079AEC7B291C18E800007035 /* NISimpleCell.xib */; };
+		079AEC80291C239B00007035 /* NITextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079AEC7F291C239B00007035 /* NITextCell.swift */; };
+		079AEC82291C23A700007035 /* NITextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079AEC81291C23A700007035 /* NITextCell.xib */; };
+		079AEC85291C773200007035 /* NIButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079AEC84291C773200007035 /* NIButtonCell.swift */; };
+		079AEC87291C77A100007035 /* NIButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079AEC86291C77A100007035 /* NIButtonCell.xib */; };
 		07C242CD282D9710003D5834 /* NIPrelauchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C242CC282D9710003D5834 /* NIPrelauchVC.xib */; };
 		07C242D0282D971F003D5834 /* NIPrelauchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C242CF282D971F003D5834 /* NIPrelauchVC.swift */; };
 		07E3ABD1282D3B460024239C /* NIOnbardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3ABD0282D3B460024239C /* NIOnbardingVC.swift */; };
@@ -52,6 +58,12 @@
 /* Begin PBXFileReference section */
 		0707D3A0282D4C9900C1F425 /* NILoanOptionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NILoanOptionsVC.swift; sourceTree = "<group>"; };
 		0707D3A2282D4CCC00C1F425 /* NILoanOptionsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NILoanOptionsVC.xib; sourceTree = "<group>"; };
+		079AEC79291C188F00007035 /* NISimpleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NISimpleCell.swift; sourceTree = "<group>"; };
+		079AEC7B291C18E800007035 /* NISimpleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NISimpleCell.xib; sourceTree = "<group>"; };
+		079AEC7F291C239B00007035 /* NITextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NITextCell.swift; sourceTree = "<group>"; };
+		079AEC81291C23A700007035 /* NITextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NITextCell.xib; sourceTree = "<group>"; };
+		079AEC84291C773200007035 /* NIButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIButtonCell.swift; sourceTree = "<group>"; };
+		079AEC86291C77A100007035 /* NIButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NIButtonCell.xib; sourceTree = "<group>"; };
 		07C242CC282D9710003D5834 /* NIPrelauchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NIPrelauchVC.xib; sourceTree = "<group>"; };
 		07C242CF282D971F003D5834 /* NIPrelauchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIPrelauchVC.swift; sourceTree = "<group>"; };
 		07E3ABD0282D3B460024239C /* NIOnbardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIOnbardingVC.swift; sourceTree = "<group>"; };
@@ -122,10 +134,48 @@
 		0707D39F282D4C5000C1F425 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				079AEC77291C186100007035 /* Cell */,
 				0707D3A0282D4C9900C1F425 /* NILoanOptionsVC.swift */,
 				0707D3A2282D4CCC00C1F425 /* NILoanOptionsVC.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		079AEC77291C186100007035 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				079AEC83291C735900007035 /* buttonCell */,
+				079AEC7E291C237700007035 /* textCell */,
+				079AEC78291C187500007035 /* SimpleCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		079AEC78291C187500007035 /* SimpleCell */ = {
+			isa = PBXGroup;
+			children = (
+				079AEC79291C188F00007035 /* NISimpleCell.swift */,
+				079AEC7B291C18E800007035 /* NISimpleCell.xib */,
+			);
+			path = SimpleCell;
+			sourceTree = "<group>";
+		};
+		079AEC7E291C237700007035 /* textCell */ = {
+			isa = PBXGroup;
+			children = (
+				079AEC7F291C239B00007035 /* NITextCell.swift */,
+				079AEC81291C23A700007035 /* NITextCell.xib */,
+			);
+			path = textCell;
+			sourceTree = "<group>";
+		};
+		079AEC83291C735900007035 /* buttonCell */ = {
+			isa = PBXGroup;
+			children = (
+				079AEC84291C773200007035 /* NIButtonCell.swift */,
+				079AEC86291C77A100007035 /* NIButtonCell.xib */,
+			);
+			path = buttonCell;
 			sourceTree = "<group>";
 		};
 		07C242CA282D96D8003D5834 /* Prelaunch */ = {
@@ -401,10 +451,13 @@
 			files = (
 				26BCF375268DB5FD0002C289 /* LaunchScreen.storyboard in Resources */,
 				26BCF390268DBDB40002C289 /* SearchCityController.storyboard in Resources */,
+				079AEC82291C23A700007035 /* NITextCell.xib in Resources */,
 				0707D3A3282D4CCC00C1F425 /* NILoanOptionsVC.xib in Resources */,
 				26A2141B268DC06A00B9BF46 /* FilterController.storyboard in Resources */,
 				26BCF372268DB5FD0002C289 /* Assets.xcassets in Resources */,
 				07E3ABD3282D3B700024239C /* NIOnbardingVC.xib in Resources */,
+				079AEC7C291C18E800007035 /* NISimpleCell.xib in Resources */,
+				079AEC87291C77A100007035 /* NIButtonCell.xib in Resources */,
 				07C242CD282D9710003D5834 /* NIPrelauchVC.xib in Resources */,
 				26BCF370268DB5FC0002C289 /* ResultController.storyboard in Resources */,
 				26BCF387268DB8F60002C289 /* SearchController.storyboard in Resources */,
@@ -519,8 +572,11 @@
 				07C242D0282D971F003D5834 /* NIPrelauchVC.swift in Sources */,
 				26BCF38D268DBADF0002C289 /* Extensions.swift in Sources */,
 				26A2141E268DC3C100B9BF46 /* ResultController.swift in Sources */,
+				079AEC85291C773200007035 /* NIButtonCell.swift in Sources */,
+				079AEC7A291C188F00007035 /* NISimpleCell.swift in Sources */,
 				26BCF38B268DBA270002C289 /* Config.swift in Sources */,
 				0707D3A1282D4C9900C1F425 /* NILoanOptionsVC.swift in Sources */,
+				079AEC80291C239B00007035 /* NITextCell.swift in Sources */,
 				26A21425268DC6EB00B9BF46 /* City.swift in Sources */,
 				26A21421268DC6B500B9BF46 /* DataRepository.swift in Sources */,
 				26BCF36B268DB5FC0002C289 /* SceneDelegate.swift in Sources */,
@@ -672,7 +728,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = josperez.NeuroIdExampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a8180897-367f-4ff1-a6f2-f8a20033be29";
+				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "com.neuroid.sandbox AppStore 1653354924";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -824,9 +880,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = X9986UAU23;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = X9986UAU23;
 				INFOPLIST_FILE = NeuroIdExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -835,8 +893,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.neuroid.sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a8180897-367f-4ff1-a6f2-f8a20033be29";
-				PROVISIONING_PROFILE_SPECIFIER = "com.neuroid.sandbox AppStore 1653354924";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.neuroid.sandbox AppStore 1653083869";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

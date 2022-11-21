@@ -32,7 +32,7 @@ final class NIOnbardingVC: UIViewController {
         employerlbl.id = "employerlbl"
         employerAddresslbl.id = "streetAddressLine1"
         employerPhoneNumberlbl.id = "employerPhoneNumberlbl"
-        
+
         super.viewDidLoad()
         setupKeyboardHiding()
         setupNavBarImage()

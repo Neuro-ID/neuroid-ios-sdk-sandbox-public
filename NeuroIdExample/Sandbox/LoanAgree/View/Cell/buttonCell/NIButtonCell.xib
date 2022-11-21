@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nke-kd-5zq" customClass="NIButtonCell" customModule="NeuroIdExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nke-kd-5zq" id="lb0-mt-oPP">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dk1-PS-1Rl">
+                        <rect key="frame" x="16" y="4" width="361" height="36"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                            <backgroundConfiguration key="background" cornerRadius="10">
+                                <color key="backgroundColor" systemColor="tintColor"/>
+                            </backgroundConfiguration>
+                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="buttonAction:" destination="nke-kd-5zq" eventType="touchUpInside" id="e1T-SD-lEw"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Dk1-PS-1Rl" secondAttribute="bottom" constant="4" id="3ZX-6h-BuZ"/>
+                    <constraint firstItem="Dk1-PS-1Rl" firstAttribute="top" secondItem="lb0-mt-oPP" secondAttribute="top" constant="4" id="Wl7-89-ULL"/>
+                    <constraint firstItem="Dk1-PS-1Rl" firstAttribute="leading" secondItem="lb0-mt-oPP" secondAttribute="leading" constant="16" id="ohw-mE-p9c"/>
+                    <constraint firstAttribute="trailing" secondItem="Dk1-PS-1Rl" secondAttribute="trailing" constant="16" id="tNl-F5-PcY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="button" destination="Dk1-PS-1Rl" id="2RO-V5-sPu"/>
+            </connections>
+            <point key="canvasLocation" x="-160" y="6"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
