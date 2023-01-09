@@ -88,3 +88,31 @@ jobs:
          APP_STORE_API_KEY: ${{ secrets.APP_STORE_API_KEY }}
          KEYCHAIN_PASSWORD: ${{ secrets.DIST_CERT_BASE64 }}
          InternalCurrentVersion: ${{ env.VERSION }}
+
+  notifications:
+    runs-on: ubuntu-latest
+    needs: testflight
+    steps: 
+      - name: Send Slack Notification on Success
+        if: ${{ needs.testflight.result == 'success' }}
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_CHANNEL: mobile-sdk-tech-team
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_ICON: https://github.com/rtCamp.png?size=48
+          SLACK_MESSAGE: "Success execution on ios-Sandbox to upload to testflight"
+          SLACK_TITLE: Success ios-Sandbox to upload to testflight
+          SLACK_USERNAME: rtBot
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
+      - name: Send Slack Notification on Failure
+        if: ${{ needs.testflight.result != 'success' }}
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_CHANNEL: mobile-sdk-tech-team
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_ICON: https://github.com/rtCamp.png?size=48
+          SLACK_MESSAGE: "Failed execution on ios-Sandbox to upload to testflight"
+          SLACK_TITLE: Failed ios-Sandbox to upload to testflight
+          SLACK_USERNAME: rtBot
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }} 
