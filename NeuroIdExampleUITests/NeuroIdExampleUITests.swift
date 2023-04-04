@@ -59,6 +59,10 @@ class NeuroIdExampleUITests: XCTestCase {
     var userid: String = "nid_ios_riskyScore" + String(Date().timeIntervalSince1970)
     var testCount: Int = 0
 
+    let testProfile1: NIDTestProfile = .init(firstName: "neuroid", lastName: "ID", dob: "02/14/2010", email: "neuroid@neuro_id.com", homeCity: "Country, City", zipCode: "87654", phone: "+18762345690", employer: "Neuro-id", eAddress: "AVE", ePhone: "+13457652890")
+    let testProfile2: NIDTestProfile = .init(firstName: "Jose Eduardo", lastName: "Perez", dob: "03/02/1990", email: "jose.pereze@neuroid.com", homeCity: "Mexico City, Mexico", zipCode: "987654", phone: "+0987654321", employer: "neuro-id", eAddress: "123 Easy Street", ePhone: "+1234567890")
+    let testProfile3: NIDTestProfile = .init(firstName: "Clay", lastName: "Selby", dob: "09/13/1989", email: "clay@hotmail.com", homeCity: "Van Life", zipCode: "12345", phone: "+8760932514", employer: "NID", eAddress: "987 Montana", ePhone: "+13452890676")
+
     let modelIntent = "intent"
     let modelFraudRing = "fraud_ring_indicator"
     let modelAutomated = "automated_activity"
@@ -83,11 +87,11 @@ class NeuroIdExampleUITests: XCTestCase {
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-        let exp = expectation(description: "Wait 6 seconds to send last events.")
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            exp.fulfill()
-        }
-        wait(for: [exp], timeout: 4)
+//        let exp = expectation(description: "Wait 6 seconds to send last events.")
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+//            exp.fulfill()
+//        }
+//        wait(for: [exp], timeout: 4)
     }
 
     func retrieveScore(userId: String) async throws -> NIDScoreResponse {
@@ -173,17 +177,17 @@ class NeuroIdExampleUITests: XCTestCase {
         let firstnameTextField = elementsQuery.textFields["firstName"]
         firstnameTextField.tap()
         /// Enter NeuroID
-        firstnameTextField.typeText("neuro")
+        firstnameTextField.typeText(testProfile1.firstName)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         let lastnameTextField = elementsQuery.textFields["lastName"]
         lastnameTextField.tap()
-        lastnameTextField.typeText("neuroid")
+        lastnameTextField.typeText(testProfile1.firstName)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         let emailTextField = elementsQuery.textFields["email"]
         emailTextField.tap()
-        emailTextField.typeText("neuroid@neuro_id.com")
+        emailTextField.typeText(testProfile1.email)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         elementsQuery.staticTexts["First Name:"]/*@START_MENU_TOKEN@*/ .swipeUp()/*[[".swipeUp()",".swipeLeft()"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/
@@ -199,19 +203,19 @@ class NeuroIdExampleUITests: XCTestCase {
         let atf = app.tables["contentTableView"].textFields["Address"]
         let eatf = app.tables["contentTableView"].textFields["EmployerAddress"]
         fntf.tap()
-        fntf.typeText("neuroid")
+        fntf.typeText(testProfile1.firstName)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         lntf.tap()
-        lntf.typeText("neuroid")
+        lntf.typeText(testProfile1.firstName)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         atf.tap()
-        atf.typeText("neuroid")
+        atf.typeText(testProfile1.firstName)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         eatf.tap()
-        eatf.typeText("neuroid")
+        eatf.typeText(testProfile1.firstName)
 
         let score2 = expectation(description: "Wait 4 seconds to get last score.")
         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
@@ -237,17 +241,17 @@ class NeuroIdExampleUITests: XCTestCase {
 
         let firstnameTextField = elementsQuery.textFields["firstName"]
         firstnameTextField.tap()
-        firstnameTextField.typeText("jose eduardo")
+        firstnameTextField.typeText(testProfile2.firstName)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         let lastnameTextField = elementsQuery.textFields["lastName"]
         lastnameTextField.tap()
-        lastnameTextField.typeText("perez martinez")
+        lastnameTextField.typeText(testProfile2.lastName)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         let emailTextField = elementsQuery.textFields["email"]
         emailTextField.tap()
-        emailTextField.typeText("jose@neuroid.com")
+        emailTextField.typeText(testProfile2.email)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         let element = app.scrollViews.children(matching: .other).element(boundBy: 0)
@@ -281,7 +285,7 @@ class NeuroIdExampleUITests: XCTestCase {
 
         let elementsQuery = app.scrollViews.otherElements
         elementsQuery/*@START_MENU_TOKEN@*/ .textFields["firstName"]/*[[".textFields[\"First Name\"]",".textFields[\"firstName\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/ .tap()
-        elementsQuery/*@START_MENU_TOKEN@*/ .textFields["firstName"]/*[[".textFields[\"First Name\"]",".textFields[\"firstName\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/ .typeText("Clay")
+        elementsQuery/*@START_MENU_TOKEN@*/ .textFields["firstName"]/*[[".textFields[\"First Name\"]",".textFields[\"firstName\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/ .typeText(testProfile3.firstName)
 
         let returnButton = app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
         returnButton.tap()
@@ -289,7 +293,7 @@ class NeuroIdExampleUITests: XCTestCase {
         elementsQuery/*@START_MENU_TOKEN@*/ .textFields["lastName"]/*[[".textFields[\"Last Name\"]",".textFields[\"lastName\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/ .tap()
         returnButton.tap()
         elementsQuery.textFields["email"].tap()
-        elementsQuery.textFields["email"].typeText("Clay@hotmail.com")
+        elementsQuery.textFields["email"].typeText(testProfile3.email)
 
         // Retrieve Score and Validate
         Task {
@@ -310,7 +314,7 @@ class NeuroIdExampleUITests: XCTestCase {
         /// Tap textfield
         let firstnameTextField = elementsQuery.textFields["firstName"]
         firstnameTextField.tap()
-        firstnameTextField.typeText("neuro")
+        firstnameTextField.typeText(testProfile1.firstName)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         /// Tap for copy
@@ -329,11 +333,11 @@ class NeuroIdExampleUITests: XCTestCase {
         firstnameTextField.tap()
         app.pressPaste()
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
-        assertFieldValues(element: firstnameTextField, expected: "neuro")
+        assertFieldValues(element: firstnameTextField, expected: testProfile1.firstName)
 
         let lastnameTextField = elementsQuery.textFields["lastName"]
         lastnameTextField.tap()
-        lastnameTextField.typeText("Perez MTZ")
+        lastnameTextField.typeText(testProfile1.lastName)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         lastnameTextField.tap()
@@ -342,14 +346,14 @@ class NeuroIdExampleUITests: XCTestCase {
         lastnameTextField.tap()
         app.pressPaste()
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
-        assertFieldValues(element: lastnameTextField, expected: "Perez MT neuro")
+        assertFieldValues(element: lastnameTextField, expected: "\(testProfile1.lastName.dropLast()) \(testProfile1.firstName)")
 
         let emailTextField = elementsQuery.textFields["email"]
         emailTextField.tap()
         emailTextField.tap()
         app.pressPaste()
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
-        assertFieldValues(element: emailTextField, expected: "neuro")
+        assertFieldValues(element: emailTextField, expected: testProfile1.firstName)
 
         // Retrieve Score and Validate
         Task {
@@ -371,20 +375,20 @@ class NeuroIdExampleUITests: XCTestCase {
         let firstnameTextField = elementsQuery/*@START_MENU_TOKEN@*/ .textFields["firstName"]/*[[".textFields[\"First Name\"]",".textFields[\"firstName\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
         firstnameTextField.tap()
         /// Enter NeuroID
-        firstnameTextField.typeText("neuroid")
+        firstnameTextField.typeText(testProfile1.firstName)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         /// Delete word
         firstnameTextField.doubleTap()
         app/*@START_MENU_TOKEN@*/ .keys["delete"]/*[[".keyboards",".keys[\"suprimir\"]",".keys[\"delete\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
-        firstnameTextField.typeText("JOSE EDUARDO")
+        firstnameTextField.typeText(testProfile2.firstName)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         let lnameTextField = elementsQuery.textFields["lastName"]
         lnameTextField.tap()
         /// Enter NeuroID
-        lnameTextField.typeText("idneurosdk")
+        lnameTextField.typeText(testProfile1.lastName)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         /// Delete word
@@ -396,13 +400,13 @@ class NeuroIdExampleUITests: XCTestCase {
 
         let emailTextField = elementsQuery.textFields["email"]
         emailTextField.tap()
-        emailTextField.typeText("jose@neuro.com")
+        emailTextField.typeText(testProfile2.email)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         emailTextField.doubleTap()
         app/*@START_MENU_TOKEN@*/ .keys["delete"]/*[[".keyboards",".keys[\"suprimir\"]",".keys[\"delete\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
-        emailTextField.typeText("neuroid@neuroid.es")
+        emailTextField.typeText(testProfile1.email)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         // Sleep for 3 seconds to ensure API is ready
@@ -433,18 +437,18 @@ class NeuroIdExampleUITests: XCTestCase {
         let homeCityTextField = elementsQuery.textFields["city"]
 
         firstnameTextField.tap()
-        firstnameTextField.typeText("jose eduardo")
+        firstnameTextField.typeText(testProfile2.firstName)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         lastnameTextField.tap()
-        lastnameTextField.typeText("perez martinez")
+        lastnameTextField.typeText(testProfile2.lastName)
 
         emailTextField.tap()
-        emailTextField.typeText("neuro@neuroid.com")
+        emailTextField.typeText(testProfile2.email)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         homeCityTextField.tap()
-        homeCityTextField.typeText("Mexico, Mexico")
+        homeCityTextField.typeText(testProfile2.homeCity)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         // Retrieve Score and Validate
@@ -470,46 +474,46 @@ class NeuroIdExampleUITests: XCTestCase {
         XCUIApplication(bundleIdentifier: "com.neuroid.sandbox").activate()
         Thread.sleep(forTimeInterval: 2)
 
-        UIPasteboard.general.string = "JOSE"
+        UIPasteboard.general.string = testProfile2.firstName.uppercased()
         firstnameTextField.tap()
         firstnameTextField.tap()
         app.pressPaste()
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
-        assertFieldValues(element: firstnameTextField, expected: "JOSE")
+        assertFieldValues(element: firstnameTextField, expected: testProfile2.firstName.uppercased())
 
         XCUIDevice.shared.press(.home)
         XCUIApplication(bundleIdentifier: "com.neuroid.sandbox").activate()
         Thread.sleep(forTimeInterval: 1)
-        UIPasteboard.general.string = "PEREZMTZ"
+        UIPasteboard.general.string = testProfile2.lastName.uppercased()
         lastnameTextField.tap()
         lastnameTextField.tap()
         app.pressPaste()
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
-        assertFieldValues(element: lastnameTextField, expected: "PEREZMTZ")
+        assertFieldValues(element: lastnameTextField, expected: testProfile2.lastName.uppercased())
 
         XCUIDevice.shared.press(.home)
         Thread.sleep(forTimeInterval: 2)
         XCUIApplication(bundleIdentifier: "com.neuroid.sandbox").activate()
         Thread.sleep(forTimeInterval: 1)
-        UIPasteboard.general.string = "jose@perez.mtz"
+        UIPasteboard.general.string = testProfile2.email
         emailTextField.tap()
         emailTextField.tap()
         app.pressPaste()
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
-        assertFieldValues(element: emailTextField, expected: "jose@perez.mtz")
+        assertFieldValues(element: emailTextField, expected: testProfile2.email)
 
-        UIPasteboard.general.string = "Mexico, MX"
+        UIPasteboard.general.string = testProfile2.homeCity
         cityTextField.tap()
         cityTextField.tap()
         app.pressPaste()
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
-        assertFieldValues(element: cityTextField, expected: "Mexico, MX")
+        assertFieldValues(element: cityTextField, expected: testProfile2.homeCity)
 
-        UIPasteboard.general.string = "03/27/1995"
+        UIPasteboard.general.string = testProfile2.dob
         dateTextField.tap()
         dateTextField.tap()
         app.pressPaste()
-        assertFieldValues(element: dateTextField, expected: "03/27/1995")
+        assertFieldValues(element: dateTextField, expected: testProfile2.dob)
 
         /// Copy events
         lastnameTextField.tap()
@@ -551,101 +555,102 @@ class NeuroIdExampleUITests: XCTestCase {
         let zipCodeTextField = elementsQuery.textFields["homeZipCode"]
         let employerTextField = elementsQuery.textFields["employerlbl"]
         let phoneNumberTextField = elementsQuery.textFields["phoneNumber"]
-        UIPasteboard.general.string = "JOSE"
+
+        UIPasteboard.general.string = testProfile2.firstName.uppercased()
         firstnameTextField.tap()
         firstnameTextField.tap()
         app.pressPaste()
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
-        assertFieldValues(element: firstnameTextField, expected: "JOSE")
+        assertFieldValues(element: firstnameTextField, expected: testProfile2.firstName.uppercased())
 
-        UIPasteboard.general.string = "PEREZMTZ"
+        UIPasteboard.general.string = testProfile2.lastName.uppercased()
         lastnameTextField.tap()
         lastnameTextField.tap()
         app.pressPaste()
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
-        assertFieldValues(element: lastnameTextField, expected: "PEREZMTZ")
+        assertFieldValues(element: lastnameTextField, expected: testProfile2.lastName.uppercased())
 
-        UIPasteboard.general.string = "jose@perez.mtz"
+        UIPasteboard.general.string = testProfile2.email
         emailTextField.tap()
         emailTextField.tap()
         app.pressPaste()
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
-        assertFieldValues(element: emailTextField, expected: "jose@perez.mtz")
+        assertFieldValues(element: emailTextField, expected: testProfile2.email)
 
-        UIPasteboard.general.string = "Country, City"
+        UIPasteboard.general.string = testProfile1.homeCity
         cityTextField.tap()
         cityTextField.tap()
         app.pressPaste()
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
-        assertFieldValues(element: cityTextField, expected: "Country, City")
+        assertFieldValues(element: cityTextField, expected: testProfile1.homeCity)
 
-        UIPasteboard.general.string = "760000"
+        UIPasteboard.general.string = testProfile2.zipCode
         zipCodeTextField.tap()
         zipCodeTextField.tap()
         app.pressPaste()
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
-        assertFieldValues(element: zipCodeTextField, expected: "760000")
+        assertFieldValues(element: zipCodeTextField, expected: testProfile2.zipCode)
 
-        UIPasteboard.general.string = "+11234567890"
+        UIPasteboard.general.string = testProfile2.phone
         phoneNumberTextField.tap()
         phoneNumberTextField.tap()
         app.pressPaste()
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
-        assertFieldValues(element: phoneNumberTextField, expected: "+11234567890")
+        assertFieldValues(element: phoneNumberTextField, expected: testProfile2.phone)
 
-        UIPasteboard.general.string = "NEUROID_WORKER"
+        UIPasteboard.general.string = testProfile2.employer.uppercased()
         employerTextField.tap()
         employerTextField.tap()
         app.pressPaste()
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
-        assertFieldValues(element: employerTextField, expected: "NEUROID_WORKER")
+        assertFieldValues(element: employerTextField, expected: testProfile2.employer.uppercased())
 
         firstnameTextField.tap()
-        let delete = String(repeating: XCUIKeyboardKey.delete.rawValue, count: "JOSE".count)
+        let delete = String(repeating: XCUIKeyboardKey.delete.rawValue, count: testProfile2.firstName.count)
         firstnameTextField.typeText(delete)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         lastnameTextField.tap()
-        let clear = String(repeating: XCUIKeyboardKey.delete.rawValue, count: "PEREZMTZ".count)
+        let clear = String(repeating: XCUIKeyboardKey.delete.rawValue, count: testProfile2.lastName.count)
         lastnameTextField.typeText(clear)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         emailTextField.tap()
-        let erase = String(repeating: XCUIKeyboardKey.delete.rawValue, count: "jose@perez.mtz".count)
+        let erase = String(repeating: XCUIKeyboardKey.delete.rawValue, count: testProfile2.email.count)
         emailTextField.typeText(erase)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         cityTextField.tap()
-        let city = String(repeating: XCUIKeyboardKey.delete.rawValue, count: "Country, City".count)
+        let city = String(repeating: XCUIKeyboardKey.delete.rawValue, count: testProfile1.homeCity.count)
         cityTextField.typeText(city)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         firstnameTextField.tap()
-        firstnameTextField.typeText("Jose")
+        firstnameTextField.typeText(testProfile2.firstName)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         lastnameTextField.tap()
-        lastnameTextField.typeText("Perez")
+        lastnameTextField.typeText(testProfile2.lastName)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         emailTextField.tap()
-        emailTextField.typeText("jose@perez.com")
+        emailTextField.typeText(testProfile2.email)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         cityTextField.tap()
-        cityTextField.typeText("City, Country")
+        cityTextField.typeText(testProfile1.homeCity)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         zipCodeTextField.tap()
-        zipCodeTextField.typeText("647000")
+        zipCodeTextField.typeText(testProfile2.zipCode)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         phoneNumberTextField.tap()
-        phoneNumberTextField.typeText("+529511234567")
+        phoneNumberTextField.typeText(testProfile1.phone)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         employerTextField.tap()
-        employerTextField.typeText("Neuro ID")
+        employerTextField.typeText(testProfile1.employer)
         app/*@START_MENU_TOKEN@*/ .buttons["Return"]/*[[".keyboards",".buttons[\"intro\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/ .tap()
 
         // Retrieve Score and Validate
@@ -689,4 +694,17 @@ struct NIDScoreSignal: Codable, CustomStringConvertible {
     var label: String?
     var version: String?
     var score: Double?
+}
+
+struct NIDTestProfile {
+    let firstName: String
+    let lastName: String
+    let dob: String
+    let email: String
+    let homeCity: String
+    let zipCode: String
+    let phone: String
+    let employer: String
+    let eAddress: String
+    let ePhone: String
 }
