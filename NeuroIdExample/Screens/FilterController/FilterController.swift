@@ -107,32 +107,32 @@ class FilterController: UIViewController {
         filterOption?.lowerPrice = Int(priceSlider.lowerValue)
         filterOption?.upperPrice = Int(priceSlider.upperValue)
 
-        tracker?.captureEvent(event: NIDEvent(type: .sliderChange, tg: ["lowerValue": TargetValue.double(priceSlider.lowerValue), "upperValue": TargetValue.double(priceSlider.upperValue)], view: priceSlider))
+//        tracker?.captureEvent(event: NIDEvent(type: .sliderChange, tg: ["lowerValue": TargetValue.double(priceSlider.lowerValue), "upperValue": TargetValue.double(priceSlider.upperValue)], view: priceSlider))
     }
 
     func toggleStar(index: Int, isSelected: Bool) {
-        let dict = [
-            1: (view: star1View, label: star1Label, icon: star1StarImage),
-            2: (view: star2View, label: star2Label, icon: star2StarImage),
-            3: (view: star3View, label: star3Label, icon: star3StarImage),
-            4: (view: star4View, label: star4Label, icon: star4StarImage),
-            5: (view: star5View, label: star5Label, icon: star5StarImage)
-        ]
-
-        let star = dict[index]
-        if isSelected {
-            star?.view?.backgroundColor = Colors.colorWhite
-            star?.label?.textColor = Colors.colorText
-            star?.icon?.image = UIImage(named: "Star-Icon")
-            selectedStars[index] = false
-            tracker?.captureEventCheckBoxChange(isChecked: false, checkBox: star!.icon!)
-        } else {
-            star?.view?.backgroundColor = Colors.colorHightLight
-            star?.label?.textColor = Colors.colorWhite
-            star?.icon?.image = UIImage(named: "StarWhite-Icon")
-            selectedStars[index] = true
-            tracker?.captureEventCheckBoxChange(isChecked: true, checkBox: star!.icon!)
-        }
+//        let dict = [
+//            1: (view: star1View, label: star1Label, icon: star1StarImage),
+//            2: (view: star2View, label: star2Label, icon: star2StarImage),
+//            3: (view: star3View, label: star3Label, icon: star3StarImage),
+//            4: (view: star4View, label: star4Label, icon: star4StarImage),
+//            5: (view: star5View, label: star5Label, icon: star5StarImage)
+//        ]
+//
+//        let star = dict[index]
+//        if isSelected {
+//            star?.view?.backgroundColor = Colors.colorWhite
+//            star?.label?.textColor = Colors.colorText
+//            star?.icon?.image = UIImage(named: "Star-Icon")
+//            selectedStars[index] = false
+//            tracker?.captureEventCheckBoxChange(isChecked: false, checkBox: star!.icon!)
+//        } else {
+//            star?.view?.backgroundColor = Colors.colorHightLight
+//            star?.label?.textColor = Colors.colorWhite
+//            star?.icon?.image = UIImage(named: "StarWhite-Icon")
+//            selectedStars[index] = true
+//            tracker?.captureEventCheckBoxChange(isChecked: true, checkBox: star!.icon!)
+//        }
     }
 
     @objc func clickedStar1View() {

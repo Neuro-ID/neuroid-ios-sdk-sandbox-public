@@ -27,7 +27,12 @@ final class NILoanOptionsVC: UIViewController {
         navigationItem.titleView = imageView
     }
     @IBAction func onClick(_ sender: Any) {
-        NeuroID.closeSession()
+    
+        do {
+            try  NeuroID.closeSession()
+        } catch {
+            
+        }
         NeuroID.groupAndPOST()
         NeuroID.clearSession()
         

@@ -19,7 +19,6 @@
 		07C242D0282D971F003D5834 /* NIPrelauchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C242CF282D971F003D5834 /* NIPrelauchVC.swift */; };
 		07E3ABD1282D3B460024239C /* NIOnbardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3ABD0282D3B460024239C /* NIOnbardingVC.swift */; };
 		07E3ABD3282D3B700024239C /* NIOnbardingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E3ABD2282D3B700024239C /* NIOnbardingVC.xib */; };
-		07EA59B028358EF400539C74 /* NeuroIdExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EA59AF28358EF400539C74 /* NeuroIdExampleUITests.swift */; };
 		26A21419268DC05500B9BF46 /* FilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A21418268DC05500B9BF46 /* FilterController.swift */; };
 		26A2141B268DC06A00B9BF46 /* FilterController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A2141A268DC06A00B9BF46 /* FilterController.storyboard */; };
 		26A2141E268DC3C100B9BF46 /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A2141D268DC3C100B9BF46 /* ResultController.swift */; };
@@ -69,7 +68,6 @@
 		07E3ABD0282D3B460024239C /* NIOnbardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIOnbardingVC.swift; sourceTree = "<group>"; };
 		07E3ABD2282D3B700024239C /* NIOnbardingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NIOnbardingVC.xib; sourceTree = "<group>"; };
 		07EA59AD28358EF400539C74 /* NeuroIdExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeuroIdExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		07EA59AF28358EF400539C74 /* NeuroIdExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuroIdExampleUITests.swift; sourceTree = "<group>"; };
 		1B31488CC367459B7043774D /* Pods-NeuroIdExampleUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeuroIdExampleUITests.staging.xcconfig"; path = "Target Support Files/Pods-NeuroIdExampleUITests/Pods-NeuroIdExampleUITests.staging.xcconfig"; sourceTree = "<group>"; };
 		26A21418268DC05500B9BF46 /* FilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterController.swift; sourceTree = "<group>"; };
 		26A2141A268DC06A00B9BF46 /* FilterController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilterController.storyboard; sourceTree = "<group>"; };
@@ -222,14 +220,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		07EA59AE28358EF400539C74 /* NeuroIdExampleUITests */ = {
-			isa = PBXGroup;
-			children = (
-				07EA59AF28358EF400539C74 /* NeuroIdExampleUITests.swift */,
-			);
-			path = NeuroIdExampleUITests;
-			sourceTree = "<group>";
-		};
 		26A2141C268DC07A00B9BF46 /* FilterController */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,7 +242,6 @@
 			isa = PBXGroup;
 			children = (
 				E331B1B6ABDA090EE7DA3887 /* Pods */,
-				07EA59AE28358EF400539C74 /* NeuroIdExampleUITests */,
 				26BCF366268DB5FC0002C289 /* Products */,
 				26BCF367268DB5FC0002C289 /* NeuroIdExample */,
 				FC777EC656F8E8F837C6DBDA /* Frameworks */,
@@ -552,7 +541,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07EA59B028358EF400539C74 /* NeuroIdExampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
