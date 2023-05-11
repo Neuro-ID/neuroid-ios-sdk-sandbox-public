@@ -4,12 +4,10 @@
 target 'NeuroIdExample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-#  pod 'Neuro-ID', :git => 'https://github.com/Neuro-ID/neuroid-ios-sdk.git'
-   pod 'Neuro-ID', :path => '/Users/clay/Developer/neuroid-ios-sdk'
+ pod 'Neuro-ID', :git => 'https://github.com/Neuro-ID/neuroid-ios-sdk.git'
 end
 target 'NeuroIdExampleUITests' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-#  pod 'Neuro-ID', :git => 'https://github.com/Neuro-ID/neuroid-ios-sdk.git'
-   pod 'Neuro-ID', :path => '/Users/clay/Developer/neuroid-ios-sdk'
+ pod 'Neuro-ID', :git => 'https://github.com/Neuro-ID/neuroid-ios-sdk.git'
 end
