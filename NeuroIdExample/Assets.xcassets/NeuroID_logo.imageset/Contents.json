@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "NID-logo-no-slogan-bluE.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

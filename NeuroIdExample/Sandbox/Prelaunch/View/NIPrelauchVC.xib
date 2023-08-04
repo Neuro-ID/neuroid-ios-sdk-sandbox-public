@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NIPrelauchVC" customModule="NeuroIdExample" customModuleProvider="target">
+            <connections>
+                <outlet property="versionLbl" destination="bZc-8F-OnD" id="I9X-m4-twB"/>
+                <outlet property="view" destination="iN0-l3-epB" id="rPc-gy-Wae"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NeuroID_logo" translatesAutoresizingMaskIntoConstraints="NO" id="4aD-JX-qDn">
+                    <rect key="frame" x="62" y="346.5" width="290" height="91"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBr-4m-73j">
+                    <rect key="frame" x="16" y="758" width="382" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="a78-Cg-8Vx"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Get Started"/>
+                    <connections>
+                        <action selector="ContinueAction:" destination="-1" eventType="touchUpInside" id="8NJ-as-2z3"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZc-8F-OnD">
+                    <rect key="frame" x="16" y="453.5" width="382" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jBr-4m-73j" secondAttribute="trailing" constant="16" id="Ct5-JR-fwQ"/>
+                <constraint firstItem="4aD-JX-qDn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="FTq-o4-x0e"/>
+                <constraint firstItem="4aD-JX-qDn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-56" id="GK0-NR-hDq"/>
+                <constraint firstItem="jBr-4m-73j" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="MBZ-yG-6h7"/>
+                <constraint firstItem="4aD-JX-qDn" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.7" id="gfB-nN-wcg"/>
+                <constraint firstItem="bZc-8F-OnD" firstAttribute="top" secondItem="4aD-JX-qDn" secondAttribute="bottom" constant="16" id="h3Z-Ai-df7"/>
+                <constraint firstItem="bZc-8F-OnD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="hCI-bk-NbJ"/>
+                <constraint firstItem="jBr-4m-73j" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tJY-Ll-nva"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jBr-4m-73j" secondAttribute="bottom" constant="56" id="uII-Lg-PnD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bZc-8F-OnD" secondAttribute="trailing" constant="16" id="wrv-RK-FPN"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="76"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NeuroID_logo" width="790.5" height="91"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

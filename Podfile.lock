@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.6.2)
+  - Neuro-ID (2.3.0):
+    - Alamofire
+
+DEPENDENCIES:
+  - Neuro-ID (from `https://github.com/Neuro-ID/neuroid-ios-sdk.git`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  Neuro-ID:
+    :git: https://github.com/Neuro-ID/neuroid-ios-sdk.git
+
+CHECKOUT OPTIONS:
+  Neuro-ID:
+    :commit: 2e2c54afce91dd178a46b4dcee8d545a0ea4aba3
+    :git: https://github.com/Neuro-ID/neuroid-ios-sdk.git
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  Neuro-ID: 7c631fd99a1e314708394c64aa86aaa64b8eaad1
+
+PODFILE CHECKSUM: 5b486c0a1ad78cc35c0ebbbe05518af4a497ca66
+
+COCOAPODS: 1.12.1
